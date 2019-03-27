@@ -1,0 +1,96 @@
+
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link href="home.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://www.solodev.com/assets/parallax/jquery.localscroll-1.2.7-min.js"></script>
+<script src="https://www.solodev.com/assets/parallax/jquery.parallax-1.1.3.js"></script>
+<script src="https://www.solodev.com/assets/parallax/jquery.scrollTo-1.4.2-min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script type="text/javascript">
+$(document).ready(function(){
+        $('#nav').localScroll(800);
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('#slider-section').parallax("50%", 0.1);
+        
+        $('#second').parallax("50%", .5);
+        
+        $('#third').parallax("50%", 0.3);
+});
+</script>
+
+
+<div class="video-overlay">
+        <div id="intro2">
+        
+                <div class = "title">
+                   Jehan Kobe Chang 
+                   <div class = "variableWord" >
+                     <span>Developer</span>
+                     <span>Virtual Reality</span>
+                     <span>Machine Learning</span>
+                     <span>UCI Honors Student</span>
+                     <span>Game Designer</span>
+                     <span>Back-end/Front-end/A.I. Engineer</span>
+                     </div>
+             
+   
+               </div>
+             </div>
+            
+            
+</div>
+<button id="buttonh" onclick="alert('Hello world!')">Click Me!</button>
+
+<div id = "slider-section">
+        <div class = "slider"">
+            <span></span>
+            <span></span>  
+            <span></span>  
+            <span></span>  
+        </div>
+</div>
+
+
+
+      
+   
+
+
+               
+
+<!--#intro-->
+<div id="second">
+        <button id="buttonsecond" onclick="alert('Hello world!')">Click Me!</button>
+   <div class="story">
+    
+      <div class="float-right">
+         <h2>Projects</h2>
+         <p>Exploring intersections and Pushing the limits of imagination. </p> 
+         <p>Poetry by Kobe Chang.</p> 
+      </div>
+   </div>
+</div>
+
+<div id = "theVideo">
+        <video autoplay muted loop id = "intro">
+            <source src="VideoFreezeFrame.mp4" type="video/mp4">
+        </video>
+    
+</div>
+<!--#second-->
+<div id="third">
+   <div class="story">
+      <div class="float-left">
+         <h2>Blah blah blah</h2>
+         <p>Poetry by Kobe Chang.</p> 
+      </div>
+   </div>
+   <!--.story-->
+</div>
+<!--#third-->
+
