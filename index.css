@@ -38,7 +38,7 @@ body{
     left: 0%;
     width: 0%;
     
-    background-image: url(images/me2.jpg);
+    background-image: url(images/me.JPG);
     background-size: cover;
     background-position: center;
     animation: profile-slide 24s infinite;
