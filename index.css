@@ -344,7 +344,7 @@ body{
 }
 @media screen and (max-width:450px){
     #third{
-        background-size: 118vw 118vw;
+        background-size: 5vw 5vw;
         height: 50vw;
     }
 }
