@@ -1,4 +1,13 @@
 
+/*
+Kobe Chang edit: This plugin is used only for attaining the Parallax effect for backgrounds. 
+Plugin: jQuery Parallax
+Version 1.1.3
+Plugin: Author: Ian Lunn
+Twitter: @IanLunn
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike).
+*/
 body{
         margin: 0;
        
@@ -11,9 +20,20 @@ body{
         color: #48941A;
 }
 
+#slider-section {
+    height: 40vw;
+    background: 50% 0 no-repeat fixed;
+    background-color: #1f1f1f;
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
 .slider {
     width: 100%;
-    height: 800px;
+    height: 60vw;
     background-color: #1f1f1f;
     overflow: hidden;
    position: relative;
@@ -39,8 +59,9 @@ body{
     width: 0%;
     
     background-image: url(images/me.JPG);
-    background-size: cover;
-    background-position: center;
+    background-position: 0 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
     animation: profile-slide 24s infinite;
     animation-fill-mode: forwards;
     animation-delay: 6s;
@@ -49,10 +70,10 @@ body{
 .slider span:nth-child(2) {
     right: 0%;
     width: 0%;
-    height: 50vw;
+    height: 40vw;
     background-image: url(images/simulation.gif );
-    background-size: cover;
-    background-position: center;
+    background-size: 50vw;
+    background-position: 0 -20vw;
     animation: weird-slidee 24s infinite;
     animation-fill-mode: forwards;
     animation-delay: 13s;
@@ -62,10 +83,8 @@ body{
 .slider span:nth-child(3) {
     right: 0%;
     width: 0%;
-    height: 500;
     background-image: url(images/art5.png);
     background-size: cover;
-    background-position: center;
     animation: horizontal-close 24s infinite;
     animation-fill-mode: forwards;
     animation-delay: 17.5s;
@@ -73,12 +92,12 @@ body{
 }
 
 @keyframes profile-slide{
-    0% {left: 100%; width: 50%;}
-    5% {left: 50%;width: 50%;}
-    25% {left:50%;width: 50%;}
-    30% {left: -100%; width: 50%;}
-    50.0001% {left: -100%; width: 0%;}
-    100% {left: 100%; width: 0%;}
+    0% {left: 100%; width:50%;top: 0px;}
+    5% {left: 50%;width: 50%;top: 0px;}
+    25% {left:50%;width: 50%;top: 0px;}
+    30% {left: -100%; width: 50%;top: 0px;}
+    50.0001% {left: -100%; width: 0vw;top: 0px;}
+    100% {left: 100%; width: 0vw;top: 0px;}
 }
 
 @keyframes slide-up{
@@ -97,15 +116,15 @@ body{
 }
 
 @keyframes weird-slidee{
-    0% {left: 100%; width: 100%;}
-    1.25% {left: 0%;}
-    15% {left:0%}
-    20% {left: -100%; width: 100%;}
-    25% {left: -100%; width: 100%;}
-    100% {left: -100%; width: 0%;}
+    0% {left: 100%; width: 100%;top:0;}
+    1.25% {left: 0%;top:0;}
+    15% {left:0%;top:0;}
+    18% {left: -100%; width: 100%;top:0;}
+    25% {left: -100%; width: 100%;top:0;}
+    100% {left: -100%; width: 0%;top:0;}
 }
 @keyframes horizontal-close{
-    0% {left: 100%; width: 100%; top: 0%;}
+    0% {left: 100%; width: 100%; top: 0%; height: 100%}
     1.25% {left: 0%;width: 100%; top: 0%;height: 100%;}
     20% {left: 0%;width: 100%; top: 0%;height: 100%;}
     
@@ -267,16 +286,6 @@ body{
     font-size: 5vw;
 }
 
-#slider-section {
-    height: 50vw;
-    background: 50% 0 no-repeat fixed;
-    background-color: #1f1f1f;
-    background-size: cover;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-}
 
 #videoStyle{
     object-fit: cover;
@@ -299,11 +308,11 @@ body{
 
 #second{
         background: url("images/betterFuji.png") 50% 0 no-repeat fixed;
-        background-size: 110vw 110vw;
+        background-size: 100vw 100vw;
         background-color: #4D4C88;
         color: white;
         height: 80vw;
-        margin: 0 auto;
+        margin: -80 auto;
         overflow: hidden;
         padding:0;
         width: 100%;
@@ -342,15 +351,9 @@ body{
         position: relative;
         width: 350px;   
 }
-@media screen and (max-width:450px){
-    #third{
-        background-size: 5vw 5vw;
-        height: 50vw;
-    }
-}
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:860px){
     @keyframes popdown{
         0% {height: 0;}
         
@@ -364,43 +367,65 @@ body{
     }
     #slider-section{
         
-        height: 50%;
+        height: 100vw;
         background-color: #1f1f1f;
     }
+    .slider{
+        height: 100vw;
+        background-color: aqua;
+    }
 
+    .slider span:nth-child(1) {
+        background-position: -45px 50px;
+        background-size: 150%;
+       
+    }
+    .slider span:nth-child(2) {
+        height: 100%;
+        
+        background-size: 105%;
+        background-position: -10px 0px;
+        background-color: aqua;
+    }
 
+    .slider span:nth-child(3) {
+        height: inherit;
+        background-position: -250px 0;
+        background-repeat: no-repeat;
+        background-size: 205%;
+        width: 100%;
+        left: 100%;
+    }
 
-.slider span{
+    @keyframes horizontal-close{
+        0% {left: 100%;  top: 0%; height: 105%;width: 100%;}
+        1.25% {left: 0%;top: 0%;height: 105%;width: 100%;}
+        20% {left: 0%; top: 0%;height: 105%;width: 100%;}
+        
+     
+        25% {left: 0%;top:50%; height: 0%;}
+        100% {left: 0%;top:50%; height: 0%;}
+    }
     
-    height: 40%;
+    #second{
+        height: 170vw;
+        background-position: -30px 0;
+        background-size: 350vw;
+    }
 
-}
-.slider span:nth-child(1) {
-    height: 50%;
-}
-.slider span:nth-child(2) {
-   
-    height: 30%;
-  
- 
-}
-
-.slider span:nth-child(3) {
-
-
-  
- 
-}
-@keyframes horizontal-close{
-    0% {left: 100%; width: 100%; top: 0%;height: 50%;}
-    1.25% {left: 0%;width: 100%; top: 0%;height: 50%;}
-    20% {left: 0%;width: 100%; top: 0%;height: 50%;}
+    #theVideo{
+       
+        position: relative;
+        height: 80vw;
+        overflow: hidden;
     
- 
-    25% {left: 0%; width: 100%;top:15%; height: 0%;}
-    100% {left: 0%;width: 100%;top:15%; height: 0%;}
-}
-
+    
+    }
+    #third{
+        height: 170vw;
+        background-position: -30px 0;
+        background-size: 350vw;
+    }
 
 }
 
