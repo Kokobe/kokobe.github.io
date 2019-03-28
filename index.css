@@ -298,7 +298,7 @@ body{
 }
 
 #second{
-        background: url("images/Mt.\ Fuji.jpg") 50% 0 no-repeat fixed;
+        background: url("images/betterFuji.png") 50% 0 no-repeat fixed;
         background-size: 110vw 110vw;
         background-color: #4D4C88;
         color: white;
@@ -311,7 +311,7 @@ body{
 
 
 #third{
-    background: url("images/sierra.png") 50% 0 no-repeat fixed;
+    background: url("images/betterSierra.png") 50% 0 no-repeat fixed;
     background-size: 118vw 118vw;
     background-color: #1f1f1f;
     color: white;
@@ -342,6 +342,13 @@ body{
         position: relative;
         width: 350px;   
 }
+@media screen and (max-width:450px){
+    #third{
+        background-size: 118vw 118vw;
+        height: 50vw;
+    }
+}
+
 
 @media screen and (max-width:800px){
     @keyframes popdown{
@@ -397,9 +404,3 @@ body{
 
 }
 
-@media screen and (max-width:450px){
-    #third{
-        background-size: 118vw 118vw;
-        height: 5vw;
-    }
-}
