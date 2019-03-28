@@ -19,11 +19,15 @@ $(document).ready(function(){
         
         $('#second').parallax("50%", .5);
         
-        $('#third').parallax("50%", 0.3);
+        $('#third').parallax("50%", 0.5);
 });
 </script>
-
-
+<script type="text/javascript">
+window.onresize = function(event)
+{
+document.location.reload(true);
+}
+</script>
 <div class="video-overlay">
         <div id="intro2">
         
@@ -77,7 +81,7 @@ $(document).ready(function(){
 </div>
 
 <div id = "theVideo">
-        <video autoplay muted loop id = "intro">
+        <video autoplay muted loop id = "videoStyle">
             <source src="VideoFreezeFrame.mp4" type="video/mp4">
         </video>
     

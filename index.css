@@ -49,7 +49,7 @@ body{
 .slider span:nth-child(2) {
     right: 0%;
     width: 0%;
-    height: 500;
+    height: 50vw;
     background-image: url(images/simulation.gif );
     background-size: cover;
     background-position: center;
@@ -268,8 +268,9 @@ body{
 }
 
 #slider-section {
-    height: 90%;
+    height: 50vw;
     background: 50% 0 no-repeat fixed;
+    background-color: #1f1f1f;
     background-size: cover;
     margin: 0 auto;
     overflow: hidden;
@@ -277,9 +278,9 @@ body{
     width: 100%;
 }
 
-#intro{
+#videoStyle{
     object-fit: cover;
-    
+    left: 0;
     height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -290,7 +291,7 @@ body{
 #theVideo{
     background: 50% 0 no-repeat fixed;
     position: relative;
-    height: 100%;
+    height: 50vw;
     overflow: hidden;
 
 
@@ -298,11 +299,11 @@ body{
 
 #second{
         background: url("images/Mt.\ Fuji.jpg") 50% 0 no-repeat fixed;
-        background-size: 150% 150%;
+        background-size: 110vw 110vw;
         background-color: #4D4C88;
         color: white;
-        height: 130%;
-        margin: 0px auto;
+        height: 80vw;
+        margin: 0 auto;
         overflow: hidden;
         padding:0;
         width: 100%;
@@ -310,14 +311,15 @@ body{
 
 
 #third{
-        background: url("images/vrControllers.png") 50% 0 no-repeat fixed;
-        background-size: 150% 150%;
-        color: black;
-        height: 90%;
-        padding: 100px 0 0 0;   
-        width: 100%;
-        overflow: hidden;
-        padding: 0;
+    background: url("images/sierra.png") 50% 0 no-repeat fixed;
+    background-size: 118vw 118vw;
+    background-color: #1f1f1f;
+    color: white;
+    height: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:0;
+    width: 100%;
 }
 
 #fifth{
@@ -341,7 +343,7 @@ body{
         width: 350px;   
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
     @keyframes popdown{
         0% {height: 0;}
         
@@ -354,17 +356,12 @@ body{
         margin: -3px 0 0 30px;
     }
     #slider-section{
-        height: 40%;
+        
+        height: 50%;
+        background-color: #1f1f1f;
     }
 
-    #second{
-       
-        height: 100%;
-}
-#third{
-    
-    height: 80%;
-}
+
 
 .slider span{
     
@@ -398,5 +395,5 @@ body{
 }
 
 
-    
 }
+
