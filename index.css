@@ -42,9 +42,9 @@ body{
 
 .slider span{
     position: absolute;
-    height: 700;
+    height: 700px;
     left: 0%; 
-    animation-delay: -1s;
+    animation-delay: -2s;
     background-image: url(images/neuralnetwork.jpeg);
     background-size: cover;
     background-position: center;
@@ -408,8 +408,9 @@ body{
     
     #second{
         height: 170vw;
-        background-position: -30px -500px;
-        background-size: 500vw;
+        background-position: -30px 500%;
+        background-repeat: no-repeat;
+        background-size: 350vw;
     }
 
     #theVideo{
