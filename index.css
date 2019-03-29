@@ -323,7 +323,7 @@ body{
     background-color: #1f1f1f;
     color: white;
     height: 80vw;
-    margin: 0 auto;
+    margin: -20vw auto;
     overflow: hidden;
     padding:0;
     width: 100%;
@@ -414,15 +414,16 @@ body{
     #theVideo{
        
         position: relative;
-        height: 80vw;
+        height: 90vw;
         overflow: hidden;
     
     
     }
     #third{
-        height: 170vw;
-        background-position: -30px 0;
-        background-size: 350vw;
+        height: 160vw;
+        margin: -21vw auto;
+        background-repeat: no-repeat;
+        background-size: 400vw;
     }
 
 }
