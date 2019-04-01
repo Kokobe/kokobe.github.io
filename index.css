@@ -71,7 +71,7 @@ body{
 
 #aboutmeText{
     color: rgb(255, 167, 109);;
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
     display: block;
     margin: 15% 15%;
@@ -83,7 +83,7 @@ body{
 
 #projectsText{
     color: rgb(255, 167, 109);
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
     display: block;
     margin: 14% 15%;
@@ -115,7 +115,7 @@ body{
     color: black;
     background-repeat: no-repeat;
     background-size: 99%;
-    text-decoration: underline;
+    text-decoration: none;
     height: 5vw;
     width: 5vw; 
     position: absolute;
@@ -553,7 +553,7 @@ body{
     }
     #third{
         height: 160vw;
-        margin: -23vw auto;
+        margin: -40vw auto;
         background-repeat: no-repeat;
         background-size: 400vw;
     }
