@@ -8,18 +8,42 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <script type="text/javascript">
 $(document).ready(function(){
-        $('#nav').localScroll(800);
+    
         //.parallax(xPosition, speedFactor, outerHeight) options:
         //xPosition - Horizontal position of the element
         //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
         
-        $('#second').parallax("50%", .2);
+        $('#second').parallax("50%", .3);
         
-        $('#third').parallax("50%", 0.2);
+        $('#third').parallax("50%", 0.3);
 });
+
+function onLinkClick() {
+   $('#aboutmeText').click.getElementsByTagName('')
+  document.getElementsByTagName('h2')[3].scrollIntoView();
+  // will scroll to 4th h3 element
+}
+
+
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<div class = "topnav">
+      <a class = "logo" href ="index.html"></a>
+      <div class = "navDiv">
+         <span id = "emailText">jkobechang@gmail.com </span></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#third">About me</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "#second">Projects</a></div>
+      <a class = "resume" href = "resume.pdf">Resume</a>
+      <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+      <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+      
+</div>
 
 <div class="video-overlay">
         <div id="intro2">
@@ -32,7 +56,7 @@ $(document).ready(function(){
                      <span>Machine Learning</span>
                      <span>UCI Honors Student</span>
                      <span>Game Designer</span>
-                     <span>Back-end/Front-end/A.I. Engineer</span>
+                     <span>Front-end/Back-end Engineer</span>
                      </div>
              
    
@@ -54,9 +78,6 @@ $(document).ready(function(){
 
 
       
-   
-
-
                
 
 <!--#intro-->
@@ -65,9 +86,7 @@ $(document).ready(function(){
    <div class="story">
     
       <div class="float-right">
-         <h2>Projects</h2>
-         <p>Pushing the limits of imagination. </p> 
-         <p>Poetry by Kobe Chang.</p> 
+         <h2>Featured Projects</h2>
       </div>
    </div>
 </div>
@@ -82,7 +101,7 @@ $(document).ready(function(){
 <div id="third">
    <div class="story">
       <div class="float-left">
-         <h2>Blah blah blah</h2>
+         <h2>About me</h2>
          <p>Poetry by Kobe Chang.</p> 
       </div>
    </div>
