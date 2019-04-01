@@ -6,6 +6,7 @@
 <script src="https://www.solodev.com/assets/parallax/jquery.localscroll-1.2.7-min.js"></script>
 <script src="https://www.solodev.com/assets/parallax/jquery.parallax-1.1.3.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 <script type="text/javascript">
 $(document).ready(function(){
     
@@ -14,9 +15,9 @@ $(document).ready(function(){
         //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
         
-        $('#second').parallax("50%", .3);
+        $('#second').parallax("50%", 0.15);
         
-        $('#third').parallax("50%", 0.3);
+        $('#third').parallax("50%", 0.15);
 });
 
 function onLinkClick() {
@@ -92,9 +93,12 @@ function onLinkClick() {
 </div>
 
 <div id = "theVideo">
-        <video autoplay muted loop id = "videoStyle">
+    <h2 id = "VR-text">MY VIRTUAL REALITY GAME</h2>
+    <a class = "website-button" href = "https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0">Check it out!</a>
+   <video autoplay muted loop id = "videoStyle">
             <source src="VideoFreezeFrame.mp4" type="video/mp4">
         </video>
+      
     
 </div>
 <!--#second-->

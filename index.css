@@ -135,9 +135,6 @@ body{
     background-image: url(images/invertedLogo.png);
     filter: invert(0%);
 }
-#header h1, #pixels{
-        color: #48941A;
-}
 
 #slider-section {
     height: 40vw;
@@ -424,28 +421,27 @@ body{
 }
 
 #second{
-        background: url("images/betterFuji.png");
-        background-size: 190vw;
-        background-repeat: no-repeat;
-        background-color: #4D4C88;
-        color: white;
-        height: 80vw;
-        margin: -12vw auto;
-        overflow: hidden;
-        padding:0;
-        width: 100%;
+    background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
+    background-size: 130vw;
+    color: white;
+    height: 80vw;
+    margin: 0vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+        
 }
 
 
 #third{
-    background: url("images/betterSierra.png");
-    background-size: 118vw 118vw;
-    background-color: #1f1f1f;
+    background: url(images/betterSierra.png) 50% 0 no-repeat;
+    background-origin: padding-box;
+    background-size: cover;
     color: white;
     height: 80vw;
-    margin: -20vw auto;
+    margin: -10vw auto;
     overflow: hidden;
-    padding:0;
+    padding: 0;
     width: 100%;
 }
 
@@ -470,6 +466,38 @@ body{
         width: 350px;   
 }
 
+#VR-text{
+    color: white;
+    position: absolute;
+    margin:-0vw 0 0 0;
+    text-shadow: 2px 2px rgb(0, 0, 0,.5);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 10vw;
+    text-align: center;
+    width: 100vw;
+    height: 50vw;
+}
+
+.website-button{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    color: black;
+    display: block;
+    height: 3vw;
+    width: 16vw;
+    border-radius: 10px;
+    margin: 45vw 43vw;
+    font-size: 2.5vw;
+    font-style: italic;
+    text-decoration: none;
+    text-align: center;
+}
+
+.website-button:hover{
+    filter: invert(100%);
+}
 
 @media screen and (max-width:860px){
     @keyframes popdown{
@@ -540,7 +568,7 @@ body{
         height: 200vw;
         margin: -30vw auto;
         background-repeat: no-repeat;
-        background-size: 400vw;
+        background-size: 300vw;
         
     }
 
@@ -553,7 +581,7 @@ body{
     }
     #third{
         height: 160vw;
-        margin: -40vw auto;
+        margin: -45vw auto;
         background-repeat: no-repeat;
         background-size: 400vw;
     }
