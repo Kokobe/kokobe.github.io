@@ -14,7 +14,7 @@ html {
   }
 body{
         margin: 0;
-        background-color:#151515;
+        background-color: #1f1f1f;
         padding: 0;
 }
 
@@ -27,6 +27,7 @@ body{
     background-color: rgb(255, 167, 109);
     color: rgb(255, 167, 109);
     background-position: 0vw -30vw;
+    margin: .8vw 0vw;
     background-repeat: no-repeat;
     
 }
@@ -422,7 +423,7 @@ body{
 
 #second{
     background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
-    background-size: 130vw;
+    background-size: 140vw;
     color: white;
     height: 80vw;
     margin: 0vw auto;
@@ -434,12 +435,15 @@ body{
 
 
 #third{
-    background: url(images/betterSierra.png) 50% 0 no-repeat;
-    background-origin: padding-box;
-    background-size: cover;
+
+    background-color: #1f1f1f;
+    
+    background: url(images/dog.jpg) 50% 0 no-repeat fixed;
+    background-size: 100vw;
+
     color: white;
-    height: 80vw;
-    margin: -10vw auto;
+    height: 130vw;
+    margin: 0vw auto;
     overflow: hidden;
     padding: 0;
     width: 100%;
@@ -466,18 +470,70 @@ body{
         width: 350px;   
 }
 
-#VR-text{
+.text {
     color: white;
     position: absolute;
-    margin:-0vw 0 0 0;
-    text-shadow: 2px 2px rgb(0, 0, 0,.5);
+    margin: 0 0;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
     font-size: 10vw;
     text-align: center;
     width: 100vw;
     height: 50vw;
 }
+
+#VR-text{
+    text-shadow: 2px 2px rgb(0, 0, 0,.3);
+    font-weight: bold;
+    font-size: 12vw;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+#scrollpic{
+    background: url("images/me3.png") 50% 0 no-repeat fixed;
+    background-size: 200vw;    
+    background-color: #99ffb3;   
+    width: 30%;
+    height: 30%;
+    padding: 0;
+    position: absolute;
+    z-index: 200;
+   
+    
+    overflow: hidden;
+    
+
+}
+
+#about-me-text{
+    font-family: 'Slabo 27px', serif;
+    font-size: 15vw;
+    margin: 5vw 39vw;
+    position: relative;
+    width: 60vw;
+    text-decoration: underline;
+}
+
+.paragraph{
+    font-family: "Raleway";
+    font-size: 3vw;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    
+    border-radius: 10px;
+    padding: 1rem;
+    margin: -35vw 39vw;
+    position: relative;
+    width: 55vw;
+    height: 50vw; 
+}
+
+
+.paragraph span{
+    color: rgb(255, 167, 109);
+    font-weight: bold;
+}
+
 
 .website-button{
     position: absolute;
@@ -498,6 +554,7 @@ body{
 .website-button:hover{
     filter: invert(100%);
 }
+
 
 @media screen and (max-width:860px){
     @keyframes popdown{
