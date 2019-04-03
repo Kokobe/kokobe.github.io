@@ -20,22 +20,12 @@ $(document).ready(function(){
         $('#second').parallax("50%", 0.15);
         
         $('#third').parallax("50%", .7);
-        $('#scrollPic').parallax("50%", .7);
+        $('.scrollPic').parallax("50%", 1.5);
+        $('.groupPic').parallax("50%", 1.5);
+        $('.groupPic2').parallax("50%", .7);
 
 
 });
-
-
-
-  var windowWidth = $(window).width();
-  var windowHeight = $(window).height();
-
-  $(window).resize(function() {
-    if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
-      location.reload();
-      return;
-    }
-  });
 
 
 
@@ -116,12 +106,17 @@ $(document).ready(function(){
 </div>
 <!--#second-->
 <div id="third">
-   <div id = "scrollpic">asfd</div>
+   <div class = "scrollpic"></div>
+   <div class = "grouppic"></div>
+   <div class = "grouppic2"></div>
       <h2 class = "text" id = "about-me-text">BIO
          </h2>
          <p class = "paragraph"> My name is <span>Jehan Kobe Chang</span>.
             </p>
-         <p class = "paragraph"> I am a freshman undergraduate at UC Irvine majoring in <span>Computer Science</span>.
+         <p class = "paragraph"> I am currently a freshman undergraduate at UC Irvine majoring in <span>Computer Science</span>.
+         </p>
+         <p class = "paragraph"> When I was a junior attending Henry M. Gunn High School,
+            I founded and presided over the Gunn Virtual Reality Club. A year later, I created my own VR game: <span>Glorious Noon</span>.
          </p>
 </div>
 

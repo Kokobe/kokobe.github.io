@@ -488,22 +488,49 @@ body{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
-#scrollpic{
-    background: url("images/me3.png") 50% 0 no-repeat fixed;
-    background-size: 200vw;    
-    background-color: #99ffb3;   
-    width: 30%;
-    height: 30%;
+.scrollpic{
+    background: url("images/me4.png") 0% 0 no-repeat;
+    background-size: 25vw;      
+    width: 100%;
+    height: 100%;
     padding: 0;
     position: absolute;
+    margin: 0vw -25vw;
     z-index: 200;
-   
     
     overflow: hidden;
-    
 
 }
 
+.grouppic{
+    background: url("images/friends.png") 0% 0 no-repeat;
+    
+    background-size: 25vw;      
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    margin: 15vw -35vw;
+    z-index: 200;
+    
+    overflow: hidden;
+
+}
+
+.grouppic2{
+    background: url("images/friends2.png") 0% 0 no-repeat;
+
+    background-size: 40vw;      
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    margin: 30vw -30vw;
+    z-index: 200;
+    
+    overflow: hidden;
+
+}
 #about-me-text{
     font-family: 'Slabo 27px', serif;
     font-size: 15vw;
@@ -638,9 +665,9 @@ body{
     }
     #third{
         height: 160vw;
-        margin: -45vw auto;
+        margin: 0vw auto;
         background-repeat: no-repeat;
-        background-size: 400vw;
+        background-size: 130vw;
     }
 
     #intro2{
