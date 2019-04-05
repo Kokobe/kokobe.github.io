@@ -1,24 +1,20 @@
-
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://www.solodev.com/assets/parallax/jquery.localscroll-1.2.7-min.js"></script>
-<script src="https://www.solodev.com/assets/parallax/jquery.parallax-1.1.3.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px|Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<link href="nav.css" rel="stylesheet">
+<link href="slider.css" rel="stylesheet">
+<link href="titleAndOverlay.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="parallax.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
-    
         //.parallax(xPosition, speedFactor, outerHeight) options:
         //xPosition - Horizontal position of the element
         //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        
         $('#second').parallax("50%", 0.3);
-        
         $('#third').parallax("50%", .3);
         $('.scrollPic').parallax("50%", 1.5);
         $('.groupPic').parallax("50%", 1.2);
@@ -26,14 +22,10 @@ $(document).ready(function(){
         $('.gunnvrpic').parallax("50%", .4);
         $('.amplifyLogo').parallax("50%", .2);
         $('.meAndBro').parallax("50%", .7);
-
-
 });
-
-
-
-
 </script>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -82,71 +74,80 @@ $(document).ready(function(){
         </div>
 </div>
 
-
-
-      
                
-
-<!--#intro-->
 <div id="second">
-      
-   <div class="story">
-    
-      <div class="float-right">
-         <h2>Featured Projects</h2>
-      </div>
-   </div>
+      <h2>Featured Projects</h2>
 </div>
+
+
 
 <div class = "video-overlay" id = "vroverlay">
       <h2 id = "VR-text" class = "text">MY VIRTUAL REALITY GAME</h2>
       <a class = "website-button" href = "https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0">Check it out!</a>
 </div>
 
+
+
 <div id = "theVideo">
-    
-   
    <video autoplay muted loop id = "videoStyle">
             <source src="VideoFreezeFrame.mp4" type="video/mp4">
         </video>
-      
-    
 </div>
-<!--#second-->
+
+
+
 <div class = "scrollpic"></div>
-   <div class = "grouppic"></div>
-   <div class = "grouppic2"></div>
-   <div class = "gunnvrpic"></div>
-   <div class = "amplifyLogo"></div>
-   <div class = "meAndBro"></div>
+<div class = "grouppic"></div>
+<div class = "grouppic2"></div>
+<div class = "gunnvrpic"></div>
+<div class = "amplifyLogo"></div>
+<div class = "meAndBro"></div>
+
+
+
 <div id="third">
-   
-   
-           
       <h2 class = "text" id = "about-me-text">BIO
          </h2>
          <p class = "paragraph" id = "p1"> My name is <span>Jehan Kobe Chang</span>.
          </p>
-         <p class = "paragraph" id = "p2"> I am currently a freshman undergraduate at UC Irvine majoring in <span>Computer Science</span>. 
-            I am also in the Campuswide Honors Program (CHP) -- which requires me to write <a class = "clickableText" href = "https://kobeblog872749184.wordpress.com/">blogs</a>. 
-            Here is my <a class = "clickableText" id = "b1" href = "resume.pdf"> resume </a> and if you would like to know more
-            about me, my email is jkobechang@gmail.com or Facebook message me @ Kobe Chang.
+         <p class = "paragraph" id = "p2"> I am currently a freshman undergraduate at UC Irvine majoring in <span id = "coloredYellow">Computer Science</span>. 
+            I am also in the Campuswide Honors Program (CHP) -- which requires me to write <a class = "clickableText" href = "https://kobeblog872749184.wordpress.com/">blogs</a> about the
+             <span id = "coloredBlue">social</span>, <span id = "coloredYellow">technological</span> impacts of <span id = "coloredRed">Empire</span> and its <span id = "coloredRed">Ruins</span> . 
          </p>
-         <p class = "paragraph" id = "p3"> When I was a junior attending Henry M. Gunn High School,
+
+         <p class = "paragraph" id = "p3"> 
+            Here is my <a class = "clickableText" id = "b1" href = "resume.pdf">resume</a> and if you would like to know more
+            about me, my email is <span id ="coloredGreen">jkobechang@gmail.com</span> or Facebook message me @ <span id ="coloredBlue">Kobe Chang</span>.
+         </p>
+
+         <p class = "paragraph" id = "p4"> When I was a junior attending <span id = "coloredRed">Henry M. Gunn High School</span>,
             I founded and presided over the Gunn Virtual Reality Club. A year later, I published my <a class = "clickableText" href = "https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0">VR game</a> onto Steam.
             Now, I am a Programming Officer for <a class = "clickableText" href = "www.vruci.com">VR @ UCI</a>.
          </p>
          <p class = "paragraph" id = "p4"> I have had two paid summer internships at <a class = "clickableText" href= "http://amplify.ai/#welcome">Amplify.ai</a>
-         This company specializes in "<span>AI-driven conversations</span>" and makes <span>Facebook chatbots</span> for companies and campaigns
+         This company specializes in "<span>AI-driven conversations</span>" and makes <span id = "coloredBlue">Facebook chatbots</span> for companies and campaigns
       such as Cheetos, Sephora, <a class = "clickableText" href = "https://48months.mygov.in/">48 Months</a>, Flawless, etc.</p>
 
-         <p class = "paragraph" id = "p4"> Artificial Intelligence and its infinite applications have captured my imagination and 
-            inspired me to pursue this field. I aim to develop projects that utilize AI's capabilities in generating 
-            positive social, technological, and environmental impacts on the world (with a little VR thrown into the mix).
+         <p class = "paragraph" id = "p4"> <span id = "coloredYellow">Artificial Intelligence</span> and its infinite applications captures my imagination and 
+            <span>inspires</span> me to pursue this field. I aim to develop projects that utilize AI's capabilities in 
+            <u>
+            <span id ="coloredPurple">generating </span>
+            <span id = "coloredRed">positive</span> <span id = "coloredBlue">social</span>, <span id = "coloredYellow">technological</span>, and <span id ="coloredGreen">environmental</span> impacts
+           
+            on the world (with a little <span id = "coloredRed">VR</span> thrown into the mix). </u> 
          </p>
-         
-
-    
 </div>
-
+<div class = "topnav">
+      <a class = "logo" href ="index.html"></a>
+      <div class = "navDiv">
+         <span id = "emailText">jkobechang@gmail.com </span></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#third">About me</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "#second">Projects</a></div>
+      <a class = "resume" href = "resume.pdf">Resume</a>
+      <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+      <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+      
+</div>
 

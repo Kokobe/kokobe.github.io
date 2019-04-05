@@ -1,0 +1,136 @@
+/*
+For the "title" of the website and the colorful changing words.
+Includes overlays and the button that leads to my VR Game.
+Author: Jehan Kobe Chang
+*/
+.title{
+    margin: 2vw 0 0 3vw;
+    font-weight: 600;
+    float: left;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 6vw;
+}
+
+
+.variableWord{
+    margin: -8px 0 0 60px;
+    font-weight:500;
+    font-style:normal;
+    font-size: 4vw;
+    width: 100%;
+    float: left;
+    position: absolute;
+    
+
+
+}
+
+.variableWord span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: #99ffb3; 
+    
+}
+.variableWord span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    color: #fc5a5a;
+}
+.variableWord span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    color: #fffeb0;
+}
+.variableWord span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    color: #b6ff62;
+}
+.variableWord span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: #fdd589;
+}
+
+.variableWord span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #fff389;
+    font-family: 'Raleway';
+    -webkit-animation: animateWord 18s ease-in-out infinite 0s;
+    -ms-animation: animateWord 18s ease-in-out infinite 0s;
+    animation: animateWord 18s ease-in-out infinite 0s;
+}
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    18% { opacity: 0; -webkit-transform: translateY(15px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.3);
+    z-index: 2;
+    
+  }
+
+  #firstScreenOverlay{
+    animation: popdown 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+@keyframes popdown{
+    0% {height: 0;}
+    
+    100%{
+        height: 40vw;}
+}
+#vroverlay{
+    height: 50vw;
+}
+
+
+
+@media screen and (max-width:560px){
+
+
+    @keyframes popdown{
+        0% {height: 0;}
+        
+        100%{
+            height: 100vw;}
+    }
+
+    .title {
+        margin: 2vw 0 0 3vw;
+    }
+    
+    .variableWord{
+        margin: -3px 0 0 30px;
+        font-size: 5vw;
+    }
+
+
+
+
+}

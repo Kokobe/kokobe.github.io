@@ -1,6 +1,7 @@
 
 /*
-Kobe Chang edit: This plugin is used only for attaining the Parallax effect for backgrounds. 
+Used for styling texts, paragraphs, and the background-images
+Kobe Chang note: This plugin is used only for attaining the Parallax effect for backgrounds. 
 When I have time, I will my own parallax solution. 
 Plugin: jQuery Parallax
 Version 1.1.3
@@ -19,379 +20,24 @@ body{
         padding: 0;
 }
 
-.topnav{
-    height: 5vw;
-    font-weight: 550;
-    font-family: 'Raleway';
-    font-size: 2vw;
-    background-color: rgb(255, 167, 109);
-    color: rgb(255, 167, 109);
-    background-position: 0vw -30vw;
-    margin: .8vw 0vw;
-    background-repeat: no-repeat;
+#VR-text{
     
+    font-weight: bold;
+    font-size: 12vw;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
-.logo{
-    display: block;
-    background-image: url(images/mylogo.png);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: 0 50%;
-    height: inherit;
-    width: 5vw; 
-    margin: 0% 1%;
-}
-
-.navDiv{
-    background-color: #1f1f1f;
-    background-repeat: no-repeat;
-    background-size: 99%;
-    height: 5vw;
-    width: 20vw; 
-    position: absolute;
-    margin: -5% 6.5%;
-    
-    font-size: 1.5vw;
-    
-    font-style: initial;
-    align-content: center;
-    display: block;
-}
-#emailText{
-    text-align: center;
-    display: block;
-    margin: 7% 5%;
-    
-}
-
-#aboutMeBox{
-    width: 10vw;
-    margin: -5% 27%;
-}
-
-#aboutmeText{
-    color: rgb(255, 167, 109);;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    margin: 15% 15%;
-}
-#projectsBox{
-    width: 10vw;
-    margin: -5% 37.5%;
-}
-
-#projectsText{
-    color: rgb(255, 167, 109);
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    margin: 14% 15%;
-}
-
-.gitLink{
-    background-image: url(images/gitlogo.png);
-    background-repeat: no-repeat;
-    background-size: 99%;
-    height: 5vw;
-    width: 5vw; 
-    position: absolute;
-    margin: -5% 90%;
-    filter: invert(0%);
-}
-
-.linkedInLink{
-    background-image: url(images/linkedinlogo.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    height: 5vw;
-    width: 5vw; 
-    position: absolute;
-    margin: -4.5% 83%;
-    filter: invert(0%);
-}
-
-.resume{
-    color: black;
-    background-repeat: no-repeat;
-    background-size: 99%;
-    text-decoration: none;
-    height: 5vw;
-    width: 5vw; 
-    position: absolute;
-    margin: -3.8% 72%;
-    filter: invert(0%);
-}
-
-.resume:hover, .gitLink:hover, .linkedInLink:hover {
-    filter: invert(100%);
-}
-
-#aboutmeText:hover, #projectsText:hover{
+#second{
+    background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
+    background-size: 140vw;
     color: white;
-}
-
-.logo:hover{
-    background-image: url(images/invertedLogo.png);
-    filter: invert(0%);
-}
-
-#slider-section {
-    height: 40vw;
-    background: 50% 0 no-repeat fixed;
-    background-color: #1f1f1f;
-    background-size: cover;
-    margin: 0 auto;
+    height: 100vw;
+    margin: 0vw auto;
     overflow: hidden;
     padding: 0;
     width: 100%;
-}
-
-.slider {
-    width: 100%;
-    height: 60vw;
-    background-color: #1f1f1f;
-    overflow: hidden;
-   position: relative;
-}
-
-
-.slider span{
-    position: absolute;
-    height: 700px;
-    left: 0%; 
-    animation-delay: -2s;
-    background-image: url(images/neuralnetwork.jpeg);
-    background-size: cover;
-    background-position: center;
-    animation: slide-up 23s infinite;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    overflow: hidden;
-
-}
-.slider span:nth-child(1) {
-    left: 0%;
-    width: 0%;
-    background-color: #1f1f1f;
-    background-image: url(images/me3.png);
-    background-position: 0 0vw;
-    background-size: 28.3%;
-    background-repeat: no-repeat;
-    animation: profile-slide 23s infinite;
-    animation-fill-mode: forwards;
-    animation-delay: 5s;
-
-}
-.slider span:nth-child(2) {
-    right: 0%;
-    width: 0%;
-    height: 40vw;
-    background-image: url(images/simulation.gif );
-    background-size: cover;
-    background-position: 0 -15vw;
-    background-repeat: no-repeat;
-    animation: weird-slidee 23s infinite;
-    animation-fill-mode: forwards;
-    animation-delay: 11.5s;
- 
-}
-
-.slider span:nth-child(3) {
-    right: 0%;
-    width: 0%;
-    background-image: url(images/art5.png);
-    background-size: cover;
-    animation: horizontal-close 23s infinite;
-    animation-fill-mode: forwards;
-    animation-delay: 16s;
- 
-}
-
-@keyframes profile-slide{
-    0% {left: 100%; width:100%;top: 0px;}
-    5% {left: 65%;width: 100%;top: 0px;}
-    25% {left:65%;width: 100%;top: 0px;}
-    30% {left: -100%; width: 100%;top: 0px;}
-    50.0001% {left: -100%; width: 0vw;top: 0px;}
-    100% {left: 100%; width: 0vw;top: 0px;}
-}
-
-@keyframes slide-up{
-    0% {left: 0%;
-        margin-left: auto;
-        margin-right: auto; top: 100%; width: 100%;}
-    5% {left: 0%;
-        margin-left: auto;
-        margin-right: auto;top: 0%;width: 100%;}
-    20% {left: 0%;
-        margin-left: auto;
-        margin-right: auto;top:0%;width: 100%;}
-   
-    25% {left: -100%; width: 0%;}
-    100% {left: 100%; width: 0%;}
-}
-
-@keyframes weird-slidee{
-    0% {left: 100%; width: 100%;top:0;}
-    1.25% {left: 0%;top:0;}
-    15% {left:0%;top:0;}
-    18% {left: -100%; width: 100%;top:0;}
-    25% {left: -100%; width: 100%;top:0;}
-    100% {left: -100%; width: 0%;top:0;}
-}
-@keyframes horizontal-close{
-    0% {left: 100%; width: 100%; top: 0%; height: 100%}
-    1.25% {left: 0%;width: 100%; top: 0%;height: 100%;}
-    20% {left: 0%;width: 100%; top: 0%;height: 100%;}
-    
- 
-    25% {left: 0%; width: 100%;top:40%; height: 0%;}
-    100% {left: 0%;width: 100%;top:40%; height: 0%;}
-}
-
-
-.title{
-    margin: 2vw 0 0 3vw;
-    font-weight: 600;
-    float: left;
-    font-family: 'Raleway';
-    color: white;
-    font-size: 6vw;
-}
-
-
-.variableWord{
-    margin: -8px 0 0 60px;
-    font-weight:500;
-    font-style:normal;
-    font-size: 4vw;
-    width: 100%;
-    float: left;
-    position: absolute;
-    
-
-
-}
-
-.variableWord span:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-    -ms-animation-delay: 3s; 
-    animation-delay: 3s; 
-    color: #99ffb3; 
-    
-}
-.variableWord span:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-    -ms-animation-delay: 6s; 
-    animation-delay: 6s; 
-    color: #fc5a5a;
-}
-.variableWord span:nth-child(4) { 
-    -webkit-animation-delay: 9s; 
-    -ms-animation-delay: 9s; 
-    animation-delay: 9s; 
-    color: #fffeb0;
-}
-.variableWord span:nth-child(5) { 
-    -webkit-animation-delay: 12s; 
-    -ms-animation-delay: 12s; 
-    animation-delay: 12s; 
-    color: #b6ff62;
-}
-.variableWord span:nth-child(6) { 
-    -webkit-animation-delay: 15s; 
-    -ms-animation-delay: 15s; 
-    animation-delay: 15s; 
-    color: #fdd589;
-}
-
-.variableWord span {
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    color: #fff389;
-    font-family: 'Raleway';
-    -webkit-animation: animateWord 18s ease-in-out infinite 0s;
-    -ms-animation: animateWord 18s ease-in-out infinite 0s;
-    animation: animateWord 18s ease-in-out infinite 0s;
-}
-@-webkit-keyframes animateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-    5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
-    18% { opacity: 0; -webkit-transform: translateY(15px); }
-    80% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-.float-left{
-        float: left;    
-        margin: 180px 0 0 20px;
         
 }
-
-.float-right{
-        float: right;
-        margin: 0 20px 0 0;
-}
-
-.center{
-        font-size: 2.5em;
-        padding: 80px 0 0 0;
-        text-align: center;
-}
-
-
-
-
-
-.video-overlay {
-    position: absolute;
-    width: 100%;
-    height: 0;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0,0,0,.3);
-    z-index: 2;
-    
-  }
-
-  #firstScreenOverlay{
-    animation: popdown 1s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-  }
-
-@keyframes popdown{
-    0% {height: 0;}
-    
-    100%{
-        height: 40vw;}
-}
-
-#resumeButton{
-    position: absolute;
-    margin: 10vw 0 0 40vw;
-    font-weight: 700;
-    float: left;
-    z-index:2;
-}
-#buttonsecond{
-    position: absolute;
-    margin: 500px 0 0 400px;
-    
-    font-weight: 700;
-    float: left;
-    z-index:2;
-}
-
-
 
 
 #videoStyle{
@@ -413,18 +59,6 @@ body{
 
 }
 
-#second{
-    background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
-    background-size: 140vw;
-    color: white;
-    height: 100vw;
-    margin: 0vw auto;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-        
-}
-
 
 #third{
 
@@ -434,7 +68,7 @@ body{
    
     background-size: cover;
     color: white;
-    height: 200vw;
+    height: 210vw;
    
     margin: 0;
     overflow: hidden;
@@ -454,17 +88,7 @@ body{
     height: 50vw;
 }
 
-#VR-text{
-    
-    font-weight: bold;
-    font-size: 12vw;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-#vroverlay{
-    
-    height: 50vw;
 
-}
 .scrollpic{
     background: url("images/me4.png") 0% 0 no-repeat;
     background-size: 25vw;      
@@ -579,19 +203,41 @@ body{
     font-weight: bold;
 }
 
+#coloredYellow{
+    color: rgb(255, 240, 109);
+}
+#coloredBlue{
+    color: rgb(110, 137, 255);
+}
+
+#coloredRed{
+    color: rgb(255, 109, 109);
+}
+
+#coloredPurple{
+    color: rgb(201, 107, 255);
+}
+
+#coloredGreen{
+    color: rgb(203, 255, 107);
+}
+
+u{
+    color: rgb(255, 167, 109);
+}
 #p1{
     
     margin-top: 5vw;
     
 }
 #p2{
-    margin-top: 0vw;
+    margin-top: -5vw;
 }
 #p3{
-    margin-top: 25vw;
+    margin-top: 15vw;
 }
 #p4{
-    margin-top: 15vw;
+    margin-top: 9vw;
 }
 
 
@@ -654,69 +300,8 @@ body{
 
 
 @media screen and (max-width:560px){
-    @keyframes popdown{
-        0% {height: 0;}
-        
-        100%{
-            height: 100vw;}
-    }
 
-
-    .title {
-        margin: 2vw 0 0 3vw;
-    }
     
-    .variableWord{
-        margin: -3px 0 0 30px;
-        font-size: 5vw;
-    }
-    #slider-section{
-        
-        height: 100vw;
-        background-color: #1f1f1f;
-    }
-    .slider{
-        height: 100vw;
-    }
-
-    .slider span:nth-child(1) {
-        background-size: 70%;
-    }
-
-    @keyframes profile-slide{
-        0% {left: 100%; width:100%;top: 0px;}
-        5% {left: 40%;width: 100%;top: 0px;}
-        25% {left:40%;width: 100%;top: 0px;}
-        30% {left: -100%; width: 100%;top: 0px;}
-        50.0001% {left: -100%; width: 0vw;top: 0px;}
-        100% {left: 100%; width: 0vw;top: 0px;}
-    }
-    .slider span:nth-child(2) {
-        height: 200%;
-        
-        background-size: 100%;
-        background-position: 0 20vw;
-       
-    }
-
-    .slider span:nth-child(3) {
-        height: inherit;
-        background-position: -250px 0;
-        background-repeat: no-repeat;
-        background-size: 205%;
-        width: 100%;
-        left: 100%;
-    }
-
-    @keyframes horizontal-close{
-        0% {left: 100%;  top: 0%; height: 105%;width: 100%;}
-        1.25% {left: 0%;top: 0%;height: 105%;width: 100%;}
-        20% {left: 0%; top: 0%;height: 105%;width: 100%;}
-        
-     
-        25% {left: 0%;top:50%; height: 0%;}
-        100% {left: 0%;top:50%; height: 0%;}
-    }
     
     #second{
         height: 200vw;
@@ -746,67 +331,6 @@ body{
     }
 
 
-    .topnav{
-        height: 24vw;
-        margin: 2vw 0;
-    }
-
-    .logo{
-        display: block;
-        width: 15vw;
-    }
-    .navDiv{
-        
-        font-size: 4.5vw;
-        margin: -25% 17%;
-        height: 8vw;
-        width: 55vw;
-    }
-
-    #emailText{
-        margin: 1.5% 5%;
-    }
-    
-    #aboutMeBox{
-        margin: -16% 17%;
-        height: 8vw;
-        width: 55vw;
-    }
-    
-    #aboutmeText{
-        margin: 1.5% 0%;
-    }
-    #projectsBox{
-        margin: -7% 17%;
-        height: 8vw;
-        width: 55vw;
-    }
-    
-    #projectsText{
-        margin: 1.5% 0%;
-    }
-    
-    .gitLink{
-        height: 8vw;
-        width: 8vw; 
-        position: absolute;
-        margin: -23% 90%;
-    }
-    
-    .linkedInLink{
-       
-        height: 8vw;
-        width: 8vw;
-        margin: -13% 90.5%;
-    }
-    
-    .resume{
-        font-size: 4vw;
-        height: 8vw;
-        width: 8vw; 
-        margin: -6% 83%;
-        
-    }
     
     
 }
