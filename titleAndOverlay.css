@@ -79,7 +79,7 @@ Author: Jehan Kobe Chang
 }
 
 
-.video-overlay {
+.overlay, .video-overlay {
     position: absolute;
     width: 100%;
     height: 0;
@@ -110,8 +110,8 @@ Author: Jehan Kobe Chang
 }
 
 
-
-@media screen and (max-width:560px){
+/* Changing dimensions if it is on mobile platform */
+@media screen and (max-width:700px){
 
 
     @keyframes popdown{
@@ -130,6 +130,16 @@ Author: Jehan Kobe Chang
         font-size: 5vw;
     }
 
+    #vroverlay{
+        height: 90vw;
+    }
+
+    #gameLinkButton{
+        margin: 81vw 39vw;
+        font-size: 4vw;
+        height: 4.5vw;
+        width: 24vw;
+    }
 
 
 
