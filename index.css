@@ -334,10 +334,12 @@ and also at parallax.js  */
 
     #second{
         background-repeat: repeat;
+        background-size: 350vw;
     }
 
     #third{
         background-repeat: repeat;
+        background-size: 200vw;
     }
 
     .meAndBro{
