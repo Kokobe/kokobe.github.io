@@ -39,7 +39,7 @@
 		function update(){
 			var pos = $window.scrollTop();				
 
-			if ($window.width() > widthLimit || widthLimit == null){
+			if (false){
 				$this.each(function(){
 					var $element = $(this);
 					var top = $element.offset().top;

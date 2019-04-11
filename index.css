@@ -331,6 +331,11 @@ I am forced to create a static background.
 Look at index.html @ the javascript script at the top
 and also at parallax.js  */
 @media screen and (max-width:500px){
+
+    #second{
+        background-position: auto -90vw;
+    }
+
     .meAndBro{
         height:70vw;
     }
