@@ -333,11 +333,16 @@ and also at parallax.js  */
 @media screen and (max-width:500px){
 
     #second{
-        background-position: auto -90vw;
+        background-repeat: repeat;
+    }
+
+    #third{
+        background-repeat: repeat;
     }
 
     .meAndBro{
         height:70vw;
+        
     }
 }
 
