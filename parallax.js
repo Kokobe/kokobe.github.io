@@ -1,3 +1,5 @@
+//Kobe Chang Edit: I added a function argument to this script: widthLimit
+// basically, it stops parallax scrolling when the viewer width is too small
 (function( $ ){
 	var $window = $(window);
 	var windowHeight = $window.height();
