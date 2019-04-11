@@ -326,16 +326,19 @@ u{
     
 }
 
-/* For mobile support */
+/* Because the plugin works horribly on mobile devices,
+I am forced to create a weird parallax-like background. */
 @media screen and (max-width:500px){
     #second{
-        background-size: 400vw;
-        
+    
     }
 
     #third{
-        margin: 0vw auto;
-        background-size: 180vw;
+        
+    }
+
+    .meAndBro{
+        height:70vw;
     }
 }
 
