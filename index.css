@@ -327,16 +327,10 @@ u{
 }
 
 /* Because the plugin works horribly on mobile devices,
-I am forced to create a weird parallax-like background. */
+I am forced to create a static background.
+Look at index.html @ the javascript script at the top
+and also at parallax.js  */
 @media screen and (max-width:500px){
-    #second{
-    
-    }
-
-    #third{
-        
-    }
-
     .meAndBro{
         height:70vw;
     }
