@@ -298,14 +298,12 @@ u{
     filter: invert(100%);
 }
 
-
+/* For half-window size */
 @media screen and (max-width:700px){
-
-    
     
     #second{
         height: 200vw;
-        margin: -30vw auto;
+        margin: 0vw auto;
         background-repeat: no-repeat;
         background-size: 300vw;
         
@@ -325,8 +323,19 @@ u{
         background-size: 140vw;
     }
 
+    
+}
 
-    
-    
+/* For mobile support */
+@media screen and (max-width:500px){
+    #second{
+        background-size: 400vw;
+        
+    }
+
+    #third{
+        margin: 0vw auto;
+        background-size: 180vw;
+    }
 }
 
