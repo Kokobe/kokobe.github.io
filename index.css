@@ -333,8 +333,9 @@ and also at parallax.js  */
 @media screen and (max-width:500px){
 
     #second{
+        height: 400vw;
         background-repeat: repeat;
-        background-size: 350vw;
+        background-size: 400vw;
     }
 
     #third{
