@@ -1,5 +1,6 @@
-//Kobe Chang Edit: I added a function argument to this script: widthLimit
-// basically, it stops parallax scrolling when the viewer width is too small
+//Kobe Chang Edit: I added two function arguments to this script: widthLimit and staticOffset
+// widthLimit: stops parallax scrolling when the viewer width is too small
+// staticOffset: when hitting the width limit, shift the parallax background y-position down 
 (function( $ ){
 	var $window = $(window);
 	var windowHeight = $window.height();
@@ -8,7 +9,7 @@
 		windowHeight = $window.height();
 	});
 
-	$.fn.parallax = function(xpos, speedFactor, outerHeight, widthLimit) {
+	$.fn.parallax = function(xpos, speedFactor, outerHeight, widthLimit, staticOffset) {
 		var $this = $(this);
 		var getHeight;
 		var firstTop;
@@ -16,7 +17,7 @@
 		
 		//get the starting position of each element to have parallax applied to it		
 		$this.each(function(){
-		    firstTop = $this.offset().top;
+		    firstTop = staticOffset;
 		});
 
 		if (outerHeight) {
@@ -34,12 +35,14 @@
 		if (arguments.length < 2 || speedFactor === null) speedFactor = 0.1;
 		if (arguments.length < 3 || outerHeight === null) outerHeight = true;
 		if (arguments.length < 4 || widthLimit === null) widthLimit = null;
+		if (arguments.length < 5 || staticOffset === null) firstTop = $this.offset().top;
 		
 		// function to be called whenever the window is scrolled or resized
 		function update(){
 			var pos = $window.scrollTop();				
 
-			if ($window.width() > widthLimit || widthLimit == null){
+			if (widthLimit === null || $window.width() > widthLimit ){
+				firstTop = $this.offset().top;
 				$this.each(function(){
 					var $element = $(this);
 					var top = $element.offset().top;
@@ -53,6 +56,20 @@
 					$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
 				});
 
+			}else {
+				firstTop = staticOffset;
+				$this.each(function(){
+					var $element = $(this);
+					var top = $element.offset().top;
+					var height = getHeight($element);
+	
+					// Check if totally above or totally below viewport
+					if (top + height < pos || top > pos + windowHeight) {
+						return;
+					}
+	
+					$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * .1) + "px");
+				});
 			}
 			
 		}		
