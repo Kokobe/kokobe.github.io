@@ -68,7 +68,7 @@
 						return;
 					}
 	
-					$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * .1) + "px");
+					$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * .01) + "px");
 				});
 			}
 			
