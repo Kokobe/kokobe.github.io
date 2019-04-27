@@ -12,6 +12,39 @@ Author: Jehan Kobe Chang
     font-size: 6vw;
 }
 
+#secondTitle{
+    margin: 4vw 0 0 25vw;
+
+}
+
+#secondProjectTitle {
+    font-weight: 600;
+    float: left;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 4vw;
+    margin: 30vw 0 0 5vw;
+    text-decoration: underline;
+}
+
+#secondProjectTitle:link{
+    color:  white;
+    z-index: 2;
+    position: relative;
+}
+
+
+#secondProjectTitle:visited{
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+#secondProjectTitle:hover{
+    color: rgb(109, 201, 255);
+    z-index: 2;
+    position: relative;
+}
+
 
 .variableWord{
     margin: -8px 0 0 60px;
@@ -134,12 +167,7 @@ Author: Jehan Kobe Chang
         height: 90vw;
     }
 
-    #gameLinkButton{
-        margin: 81vw 39vw;
-        font-size: 4vw;
-        height: 4.5vw;
-        width: 24vw;
-    }
+    
 
 
 

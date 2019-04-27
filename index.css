@@ -31,7 +31,7 @@ body{
     background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
     background-size: 200vw;
     color: white;
-    height: 100vw;
+    height: 130vw;
     margin: 0vw auto;
     overflow: hidden;
     padding: 0;
@@ -39,6 +39,49 @@ body{
         
 }
 
+.left-text {
+    font-weight: 300;
+    width: 50vw;
+    float: left;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 2.8vw;
+    margin: 5vw 0 0 5vw;
+
+}
+
+.secondImageSettings{
+    width: 36vw;
+    height: 36vw;
+    padding: 0;
+    position: absolute;
+    z-index: 200;
+}
+
+#asymImage1{
+    background: url("images/AsymmetricalVR.png") 0% 0 no-repeat;
+    background-size: 50vw;  
+    width: 50%;
+    height: 21.5vw;
+    margin: 15vw 0 0 5vw;
+    border-radius: 10px;
+}
+
+#asymImage2{
+    background: url("images/VRAsym2.png") 0% 0 no-repeat;
+    background-size: 35vw;      
+    margin: 25vw 0 0 60vw;
+}
+
+#asymImage3{
+    background: url("images/VRAsym3.png") 0% 0 no-repeat;
+    background-size: 35vw;      
+    margin: 85vw 0 0 55vw;
+}
+
+#asymLinkButton{
+    margin: 70vw 0 0 65vw;
+}
 
 #videoStyle{
     object-fit: cover;
@@ -55,8 +98,6 @@ body{
     position: relative;
     height: 50vw;
     overflow: hidden;
-
-
 }
 
 
@@ -86,6 +127,11 @@ body{
     text-align: center;
     width: 100vw;
     height: 50vw;
+}
+
+
+.underline{
+    text-decoration: underline;
 }
 
 
@@ -167,7 +213,6 @@ body{
     position: absolute;
     margin: 150vw 0vw 0 0;
     z-index: 200;
-    
     overflow: hidden;
 }
 #about-me-text{
