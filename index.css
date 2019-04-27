@@ -383,8 +383,7 @@ and also at parallax.js  */
     }
 
     #third{
-        background-repeat: repeat;
-        background-size: 200vw;
+        background-size: 400vw;
     }
 
     .meAndBro{
