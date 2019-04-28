@@ -76,11 +76,11 @@ body{
 #asymImage3{
     background: url("images/VRAsym3.png") 0% 0 no-repeat;
     background-size: 35vw;      
-    margin: 85vw 0 0 55vw;
+    margin: 75vw 0 0 55vw;
 }
 
 #asymLinkButton{
-    margin: 70vw 0 0 65vw;
+    margin: 110vw 0 0 20vw;
 }
 
 #videoStyle{
