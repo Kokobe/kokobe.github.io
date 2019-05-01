@@ -1,6 +1,7 @@
 
 /*
 Used for styling texts, paragraphs, and the background-images. 
+and the buttons that leads to my VR Game and the Projects.
 Includes CSS for parallax picture scrolling too!
 Kobe Chang note: This plugin is used only for attaining the Parallax effect for backgrounds. 
 
@@ -390,5 +391,14 @@ and also at parallax.js  */
         height:70vw;
         
     }
+
+    #asymLinkButton{
+        margin: 120vw 0 0 20vw;
+    }
+    
+    #gameLinkButton{
+        margin: 83vw 0 0 42vw;
+    }
+    
 }
 
