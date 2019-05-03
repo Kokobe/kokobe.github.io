@@ -4,11 +4,11 @@ Author: Jehan Kobe Chang
 
 
 #slider-section {
-    height: 40vw;
+    height: 60vw;
     background: 50% 0 no-repeat fixed;
     background-color: #1f1f1f;
     background-size: cover;
-    margin: 0 auto;
+    margin:  0vw auto;
     overflow: hidden;
     padding: 0;
     width: 100%;
@@ -25,7 +25,7 @@ Author: Jehan Kobe Chang
 
 .slider span{
     position: absolute;
-    height: 700px;
+    height: 60vw;
     left: 0%; 
     animation-delay: -2s;
     background-image: url(images/neuralnetwork.jpeg);
@@ -40,10 +40,9 @@ Author: Jehan Kobe Chang
 .slider span:nth-child(1) {
     left: 0%;
     width: 0%;
-    background-color: #1f1f1f;
     background-image: url(images/me3.png);
     background-position: 0 0vw;
-    background-size: 28.3%;
+    background-size: 42.3%;
     background-repeat: no-repeat;
     animation: profile-slide 23s infinite;
     animation-fill-mode: forwards;
@@ -53,10 +52,10 @@ Author: Jehan Kobe Chang
 .slider span:nth-child(2) {
     right: 0%;
     width: 0%;
-    height: 40vw;
+    height: 60vw;
     background-image: url(images/simulation.gif );
     background-size: cover;
-    background-position: 0 -15vw;
+    background-position: 0 0vw;
     background-repeat: no-repeat;
     animation: weird-slidee 23s infinite;
     animation-fill-mode: forwards;
@@ -68,7 +67,8 @@ Author: Jehan Kobe Chang
     right: 0%;
     width: 0%;
     background-image: url(images/art5.png);
-    background-size: cover;
+    background-size: 110%;
+    background-position: 0 0vw;
     animation: horizontal-close 23s infinite;
     animation-fill-mode: forwards;
     animation-delay: 16s;
@@ -77,8 +77,8 @@ Author: Jehan Kobe Chang
 
 @keyframes profile-slide{
     0% {left: 100%; width:100%;top: 0px;}
-    5% {left: 65%;width: 100%;top: 0px;}
-    25% {left:65%;width: 100%;top: 0px;}
+    5% {left: 55%;width: 100%;top: 0px;}
+    25% {left:55%;width: 100%;top: 0px;}
     30% {left: -100%; width: 100%;top: 0px;}
     50.0001% {left: -100%; width: 0vw;top: 0px;}
     100% {left: 100%; width: 0vw;top: 0px;}
@@ -123,17 +123,22 @@ Author: Jehan Kobe Chang
         height: 100vw;
     }
 
+    .slider span{
+       
+        height: 100vw;
+    
+    }
     .slider span:nth-child(1) {
-        background-size: 70%;
+        background-size: 60%;
     }
 
     @keyframes profile-slide{
-        0% {left: 100%; width:100%;top: 0px;}
-        5% {left: 40%;width: 100%;top: 0px;}
-        25% {left:40%;width: 100%;top: 0px;}
-        30% {left: -100%; width: 100%;top: 0px;}
-        50.0001% {left: -100%; width: 0vw;top: 0px;}
-        100% {left: 100%; width: 0vw;top: 0px;}
+        0% {left: 100%; width:100%;top: 7vw;}
+        5% {left: 40%;width: 100%;top: 7vw;}
+        25% {left:40%;width: 100%;top: 7vw;}
+        30% {left: -100%; width: 100%;top: 7vw;}
+        50.0001% {left: -100%; width: 0vw;top: 7vw;}
+        100% {left: 100%; width: 0vw;top: 7vw;}
     }
     .slider span:nth-child(2) {
         height: 200%;
