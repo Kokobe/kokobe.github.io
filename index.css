@@ -28,7 +28,18 @@ body{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
-#second{
+#essential{
+    background-color: black;
+    color: white;
+    height: 130vw;
+    margin: 0vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+        
+}
+
+#featured{
     background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
     background-size: 200vw;
     color: white;

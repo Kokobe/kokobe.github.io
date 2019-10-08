@@ -54,9 +54,6 @@ Author: Jehan Kobe Chang
     width: 100%;
     float: left;
     position: absolute;
-    
-
-
 }
 
 .variableWord span:nth-child(2) { 
@@ -82,13 +79,19 @@ Author: Jehan Kobe Chang
     -webkit-animation-delay: 12s; 
     -ms-animation-delay: 12s; 
     animation-delay: 12s; 
-    color: #b6ff62;
+    color: #d5ff4a;
 }
 .variableWord span:nth-child(6) { 
     -webkit-animation-delay: 15s; 
     -ms-animation-delay: 15s; 
     animation-delay: 15s; 
-    color: #fdd589;
+    color: #ffe4b3;
+}
+.variableWord span:nth-child(7) { 
+    -webkit-animation-delay: 18s; 
+    -ms-animation-delay: 18s; 
+    animation-delay: 18s; 
+    color: #fffeb0;
 }
 
 .variableWord span {
@@ -97,9 +100,9 @@ Author: Jehan Kobe Chang
     overflow: hidden;
     color: #fff389;
     font-family: 'Raleway';
-    -webkit-animation: animateWord 18s ease-in-out infinite 0s;
-    -ms-animation: animateWord 18s ease-in-out infinite 0s;
-    animation: animateWord 18s ease-in-out infinite 0s;
+    -webkit-animation: animateWord 21s ease-in-out infinite 0s;
+    -ms-animation: animateWord 21s ease-in-out infinite 0s;
+    animation: animateWord 21s ease-in-out infinite 0s;
 }
 @-webkit-keyframes animateWord {
     0% { opacity: 0; }

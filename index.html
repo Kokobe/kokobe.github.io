@@ -13,7 +13,7 @@ $(document).ready(function(){
         //.parallax(xPosition, speedFactor, outerHeight) options:
         //xPosition - Horizontal position of the element
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        $('#second').parallax("50%", 0.5, true, 500, 400);
+        $('#featured').parallax("50%", 0.5, true, 500, 400);
         $('#third').parallax("50%", 0.3, true, 500, 1450);
         $('.scrollPic').parallax("50%", 1.5);
         $('.groupPic').parallax("50%", 1.2);
@@ -53,6 +53,7 @@ Styling + Animation found in titleAndOverlay.css -->
             <span>Virtual Reality</span>
             <span>Machine Learning</span>
             <span>UCI Honors Student</span>
+            <span>Android Developer</span>
             <span>Game Designer</span>
             <span>Front-end/Back-end Engineer</span>
          </div>
@@ -72,9 +73,13 @@ They are differentiated in index.css by child index! -->
 </div>
 
 
-<!-- "second" = second major div. This will feature my selected projects.
+<div id="essential">
+   <h2 class = "title" >My internship at Essential</h2>
+</div>
+
+<!-- This div will feature my selected projects.
 Has parallax scrolling of the background, so styling is in index.css  -->
-<div id="second">
+<div id="featured">
    <h2 class = "title" id = "secondTitle">Featured Projects</h2>
    <a class = "clickableText" id = "secondProjectTitle" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Asymmetrical Fruit Ninja</a>
    <div class = "left-text">"Asymmetrical Virtual Reality" 
@@ -90,8 +95,6 @@ Has parallax scrolling of the background, so styling is in index.css  -->
    <div class = "secondImageSettings" id = "asymImage2"></div>
    <div class = "secondImageSettings" id = "asymImage3"></div>
    <a class = "website-button" id = "asymLinkButton" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Try it out!</a>
-
-
 </div>
 
 
@@ -184,7 +187,7 @@ Will replace this with a different useful bar in the future. -->
       <div class = "navDiv" id = "aboutmeBox">
          <a id = "aboutmeText" href = "#third">About me</a></div>
       <div class = "navDiv" id = "projectsBox">
-            <a id = "projectsText" href = "#second">Projects</a></div>
+            <a id = "projectsText" href = "#featured">Projects</a></div>
       <a class = "resume" href = "resume.pdf">Resume</a>
       <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
       <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
