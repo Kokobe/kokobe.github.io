@@ -40,7 +40,7 @@ Author: Jehan Kobe Chang
 .slider span:nth-child(1) {
     left: 0%;
     width: 0%;
-    background-image: url(images/me3.png);
+    background-image: url(images/me.png);
     background-position: 0 0vw;
     background-size: 42.3%;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ Author: Jehan Kobe Chang
     background-repeat: no-repeat;
     animation: weird-slidee 29s infinite;
     animation-fill-mode: forwards;
-    animation-delay: 11.5s;
+    animation-delay: 12s;
  
 }
 .slider span:nth-child(3) {
@@ -73,7 +73,7 @@ Author: Jehan Kobe Chang
     background-repeat: no-repeat;
     animation: weird-slidee 29s infinite;
     animation-fill-mode: forwards;
-    animation-delay: 16s;
+    animation-delay: 16.5s;
 }
 
 .slider span:nth-child(4) {
@@ -84,15 +84,15 @@ Author: Jehan Kobe Chang
     background-position: 0 0vw;
     animation: horizontal-close 29s infinite;
     animation-fill-mode: forwards;
-    animation-delay: 20.5s;
+    animation-delay: 21.0s;
  
 }
 
 @keyframes profile-slide{
     0% {left: 100%; width:100%;top: 0px;}
     5% {left: 55%;width: 100%;top: 0px;}
-    25% {left:55%;width: 100%;top: 0px;}
-    30% {left: -100%; width: 100%;top: 0px;}
+    20% {left:55%;width: 100%;top: 0px;}
+    25% {left: -100%; width: 100%;top: 0px;}
     50.0001% {left: -100%; width: 0vw;top: 0px;}
     100% {left: 100%; width: 0vw;top: 0px;}
 }
