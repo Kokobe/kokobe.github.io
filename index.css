@@ -358,7 +358,7 @@ u{
 /* For half-window size */
 @media screen and (max-width:700px){
     
-    #second{
+    #featured{
         height: 200vw;
         margin: 0vw auto;
         background-repeat: no-repeat;
@@ -389,9 +389,10 @@ Look at index.html @ the javascript script at the top
 and also at parallax.js  */
 @media screen and (max-width:500px){
 
-    #second{
+    #featured{
         height: 150vw;
         background-size: 400vw;
+        background-position: auto 1000vw;
     }
 
     #third{
