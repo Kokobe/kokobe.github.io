@@ -31,13 +31,38 @@ body{
 #essential{
     background-color: black;
     color: white;
-    height: 130vw;
+    height: 200vw;
     margin: 0vw auto;
     overflow: hidden;
     padding: 0;
     width: 100%;
-        
 }
+.essential_image_settings{
+    width: 50vw;
+    height: 50vw;
+    padding: 0;
+    
+}
+#essential_image1{
+    background: url("images/essential_tools.png") 0% 0 no-repeat;
+    background-size: 60vw;  
+    background-color: aliceblue;
+    width: 60vw;
+    height: 25vw;
+    margin: 34vw 0 0 20vw;
+    border-radius: 20px;
+}
+
+#essential_image2{
+    background: url("images/party.JPG") 0% 0 no-repeat;
+    background-size: 60vw;  
+    background-color: aliceblue;
+    width: 60vw;
+    height: 35vw;
+    margin: -99vw 0 0 20vw;
+    border-radius: 20px;
+}
+
 
 #featured{
     background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
@@ -49,6 +74,17 @@ body{
     padding: 0;
     width: 100%;
         
+}
+
+.center-text {
+    font-weight: 300;
+    width: 80vw;
+    float: left;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 2.8vw;
+    margin: 8vw 0 9vw 10vw;
+    text-align: center;
 }
 
 .left-text {
@@ -357,7 +393,10 @@ u{
 
 /* For half-window size */
 @media screen and (max-width:700px){
-    
+    .center-text {
+        font-size: 5vw;
+    }
+
     #featured{
         height: 200vw;
         margin: 0vw auto;

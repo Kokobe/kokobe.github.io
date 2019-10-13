@@ -47,7 +47,6 @@ Author: Jehan Kobe Chang
     animation: profile-slide 29s infinite;
     animation-fill-mode: forwards;
     animation-delay: 6s;
-
 }
 
 .slider span:nth-child(2) {
@@ -148,8 +147,8 @@ Author: Jehan Kobe Chang
     @keyframes profile-slide{
         0% {left: 100%; width:100%;top: 7vw;}
         5% {left: 40%;width: 100%;top: 7vw;}
-        25% {left:40%;width: 100%;top: 7vw;}
-        30% {left: -100%; width: 100%;top: 7vw;}
+        15% {left:40%;width: 100%;top: 7vw;}
+        18% {left: -100%; width: 100%;top: 7vw;}
         50.0001% {left: -100%; width: 0vw;top: 7vw;}
         100% {left: 100%; width: 0vw;top: 7vw;}
     }

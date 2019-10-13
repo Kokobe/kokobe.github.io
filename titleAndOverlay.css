@@ -3,18 +3,21 @@ For the "title" of the website and the colorful changing words.
 Includes overlays.
 Author: Jehan Kobe Chang
 */
-.title{
+.title {
     margin: 2vw 0 0 3vw;
     font-weight: 600;
     float: left;
     font-family: 'Raleway';
     color: white;
-    font-size: 6vw;
+    font-size: 7vw;
 }
 
-#secondTitle{
-    margin: 4vw 0 0 25vw;
+#essential_title {
+    margin: 4vw 0 0 8.5vw;
+}
 
+#secondTitle {
+    margin: 4vw 0 0 25vw;
 }
 
 #secondProjectTitle {
@@ -159,6 +162,7 @@ Author: Jehan Kobe Chang
 
     .title {
         margin: 2vw 0 0 3vw;
+        font-size: 8vw;
     }
     
     .variableWord{
