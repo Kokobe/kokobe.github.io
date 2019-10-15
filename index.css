@@ -41,7 +41,7 @@ body{
     width: 50vw;
     height: 50vw;
     padding: 0;
-    
+    z-index: 200;
 }
 #essential_image1{
     background: url("images/essential_tools.png") 0% 0 no-repeat;
