@@ -156,6 +156,11 @@ Author: Jehan Kobe Chang
         margin: 4vw 0 0 7vw;
         text-align: center;
     }
+
+    #secondTitle {
+        margin: 4vw 0 0 15vw;
+        text-align: center;
+    }
     
 
     @keyframes popdown{
