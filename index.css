@@ -428,6 +428,40 @@ Look at index.html @ the javascript script at the top
 and also at parallax.js  */
 @media screen and (max-width:500px){
 
+    #essential {
+        height: 330vw;
+    }
+
+    .essential_image_settings{
+        width: 100vw;
+        height: 100vw;
+        padding: 0;
+        margin: 34vw 0 0 20vw;
+        z-index: 200;
+    }
+    #essential_image1{
+        background: url("images/essential_tools.png") 0% 0 no-repeat;
+        background-size: 80vw;  
+        background-color: aliceblue;
+        width: 80vw;
+        height: 35vw;
+        margin: 65vw 0 0 10vw;
+        border-radius: 20px;
+    }
+    
+    #essential_image2{
+        background: url("images/party.JPG") 0% 0 no-repeat;
+        background-size: 100vw;  
+        background-color: aliceblue;
+        width: 90vw;
+        height: 75vw;
+        margin: -140vw 0 0 5vw;
+        border-radius: 20px;
+    }
+    
+
+
+
     #featured{
         height: 150vw;
         background-size: 400vw;

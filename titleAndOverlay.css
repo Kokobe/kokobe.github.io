@@ -152,6 +152,11 @@ Author: Jehan Kobe Chang
 /* Changing dimensions if it is on mobile platform */
 @media screen and (max-width:700px){
 
+    #essential_title {
+        margin: 4vw 0 0 7vw;
+        text-align: center;
+    }
+    
 
     @keyframes popdown{
         0% {height: 0;}
