@@ -1,0 +1,200 @@
+/* navigation
+Author: Jehan Kobe Chang
+*/
+.topnav{
+    height: 5vw;
+    font-weight: 550;
+    font-family: 'Raleway';
+    font-size: 2vw;
+    background-color: rgb(238, 225, 108);
+    color: rgb(238, 225, 108);
+    background-position: 0vw -30vw;
+    margin: .8vw 0vw;
+    background-repeat: no-repeat;
+    
+}
+
+.logo{
+    display: block;
+    background-image: url(images/mylogo.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 0 50%;
+    height: inherit;
+    width: 5vw; 
+    margin: 0% 1%;
+}
+
+.navDiv{
+    background-color: #151515;
+    background-repeat: no-repeat;
+    background-size: 99%;
+    height: 5vw;
+    width: 20vw; 
+    position: absolute;
+    margin: -5% 6.5%;
+    
+    font-size: 1.5vw;
+    
+    font-style: initial;
+    align-content: center;
+    display: block;
+}
+#emailText{
+    text-align: center;
+    display: block;
+    margin: 7% 5%;
+    
+}
+#negativesBox{
+    width: 15vw;
+    margin: -5vw 6.5vw;
+}
+
+#negativesText{
+    color: rgb(238, 225, 108);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 10% 15%;
+}
+
+#aboutMeBox{
+    width: 13vw;
+    margin: -5vw 22vw;
+}
+
+#aboutmeText{
+    color: rgb(238, 225, 108);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 8% 15%;
+}
+#projectsBox{
+    width: 12vw;
+    margin: -5vw 35.5vw;
+}
+
+#projectsText{
+    color: rgb(238, 225, 108);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 14% 15%;
+}
+
+.gitLink{
+    background-image: url(images/gitlogo.png);
+    background-repeat: no-repeat;
+    background-size: 99%;
+    height: 5vw;
+    width: 5vw; 
+    position: absolute;
+    margin: -5% 90%;
+    filter: invert(0%);
+}
+
+.linkedInLink{
+    background-image: url(images/linkedinlogo.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 5vw;
+    width: 5vw; 
+    position: absolute;
+    margin: -4.5% 83%;
+    filter: invert(0%);
+}
+
+.resume{
+    color: black;
+    background-repeat: no-repeat;
+    background-size: 99%;
+    text-decoration: none;
+    height: 5vw;
+    width: 5vw; 
+    position: absolute;
+    margin: -3.8% 72%;
+    filter: invert(0%);
+}
+
+.resume:hover, .gitLink:hover, .linkedInLink:hover {
+    filter: invert(100%);
+}
+
+#aboutmeText:hover, #projectsText:hover, #negativesText:hover{
+    color: white;
+}
+
+.logo:hover{
+    background-image: url(images/invertedLogo.png);
+    filter: invert(0%);
+}
+
+@media screen and (max-width:700px){
+    .topnav{
+        height: 24vw;
+        margin: 0vw 0;
+    }
+
+    .logo{
+        display: block;
+        width: 15vw;
+    }
+    .navDiv{
+        
+        font-size: 4.5vw;
+        margin: -25% 17%;
+        height: 8vw;
+        width: 55vw;
+    }
+
+    #emailText{
+        margin: 1.5% 5%;
+    }
+    
+    #aboutMeBox{
+        margin: -16% 17%;
+        height: 8vw;
+        width: 55vw;
+    }
+    
+    #aboutmeText{
+        margin: 1.5% 0%;
+    }
+    #projectsBox{
+        margin: -7% 17%;
+        height: 8vw;
+        width: 55vw;
+    }
+    
+    #projectsText{
+        margin: 1.5% 0%;
+    }
+    
+    .gitLink{
+        height: 8vw;
+        width: 8vw; 
+        position: absolute;
+        margin: -23% 90%;
+    }
+    
+    .linkedInLink{
+       
+        height: 8vw;
+        width: 8vw;
+        margin: -13% 90.5%;
+    }
+    
+    .resume{
+        font-size: 4vw;
+        height: 8vw;
+        width: 8vw; 
+        margin: -6% 83%;
+        
+    }
+    
+
+
+
+}

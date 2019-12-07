@@ -1,0 +1,216 @@
+<link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+<link href="bluelight.css" rel="stylesheet">
+<link href="bluelight_nav.css" rel="stylesheet">
+<link href="bluelight_slider.css" rel="stylesheet">
+<link href="bluelight_titleAndOverlay.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="parallax.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('#featured').parallax("50%", 0.5, true, 500, 1700);
+        $('#third').parallax("50%", 0.3, true, 500, 2700);
+        $('.scrollPic').parallax("50%", 1.5);
+        $('.groupPic').parallax("50%", 1.2);
+        $('.groupPic2').parallax("50%", .5);
+        $('.gunnvrpic').parallax("50%", .4);
+        $('.amplifyLogo').parallax("50%", .2);
+        $('.meAndBro').parallax("50%", .3);
+});
+</script>
+
+<!-- Needed to support multiple window widths -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Top navigation. Styling found in nav.css -->
+<div class = "topnav">
+      <a class = "logo" href ="bluelight.html"></a>
+      <div class = "navDiv" id = "negativesBox">
+         <a id = "negativesText" href = "#essential">Negatives</a></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#featured">Night-Shift Mode</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "#third">Applications</a></div>
+      
+</div>
+
+<!-- To create an overlay over the sliding pictures.
+Styling + Animation found in titleAndOverlay.css -->
+<div class="overlay" id = "firstScreenOverlay">
+   <div class = "title">
+         Should we be worried about blue-light device emission? 
+         <div class = "variableWord" >
+            <span>Is it dangerous?</span>
+            <span>Night-mode?</span>
+            <span>Applications of Blue-light</span>
+            <span>Ocular Cell Damage</span>
+            <span>Blue-light Goggles</span>
+            <span>Orange Light</span>
+            <span>Ocular Damage</span>
+         </div>
+   </div>        
+</div>
+
+<!-- Each span in this section is a slider picture with its own animation.
+They are differentiated in index.css by child index! -->
+<div id = "slider-section">
+   <div class = "slider"">
+      <span></span>
+      <span></span>  
+      <span></span>  
+      <span></span>  
+      <span></span>  
+   </div>
+</div>
+
+
+<div id="essential">
+   <h2 class = "title" id = "essential_title"> Negative Effects of Blue-light</h2>
+   <div class = "center-text"> Computers, phones, tablets, and televisions are our main sources of electronic light.  </div>
+   <div class = "essential_image_settings" id = "essential_image1"></div>
+   <div class = "center-text"> Of the wavelengths of visible light, blue-light has been attributed to 
+         <a class = "clickableText" href = "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1600-0420.2005.00627.x">
+            increasing risk of retinal cell death</a>. Blue light that has high energy and a short wavelength, and due to the 
+            photoelectric effect, it can remove more electrons off of molecules and damage the eye by changing its oxygen concentrations ().
+        In addition to eye-strain, studies have shown that light-emitting electronics before bedtime can have a signficant
+        <a class = "clickableText" href = "https://www.pnas.org/content/112/4/1232">
+         impact on sleep, morning alertness, melatonin suppression, and the circadian clock</a>. A shifted circadian clock would be like having
+         jet-lag: the body feels like it is not aligned with our daily schedules. Ultimately, this would decrease the amount of sleep
+         one would receive, increasing stress, loss of function, and a shortened life expectancy. 
+          </div>
+
+
+      <div class = "center-text"> 
+            From the scientific journals that I have  <a class = "clickableText" href = "#third">
+               researched</a>,  most of them demonstrate that these negative effects are 
+         not as visible and harmful in short-term studies (6 months to 1.5 years). For most of these, however, a longitudinal study does not exist.
+         In a world where technology has perpetuated every aspect of our life, the long-term consequences of blue-light should be studied. 
+         We don't know how constant blue-light and shifts in our circadian rhythm will effect aging, eye-sight, and stress. 
+         One could say that we could compare the eye-tissue and health of people who heavily use screen electronics with those who have not,
+      but there are so many confounding factors such as age, natural sunlight, genetics.  </div>
+      </div>
+
+
+   
+
+<!-- This div will feature my selected projects.
+Has parallax scrolling of the background, so styling is in index.css  -->
+<div id="featured">
+   <h2 class = "title" id = "secondTitle">Night-Shift Mode</h2>
+   <a class = "clickableText" id = "secondProjectTitle" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">What is Night-Shift Mode?</a>
+   <div class = "left-text">"Asymmetrical Virtual Reality" 
+      is where player interaction is split into two channels: the 
+      <span class = "underline"> desktop and the VR kit</span>. In this project game, one 
+      player uses the desktop to control one entity and the VR player will battle the desktop player.
+      The desktop player will throw fruits and have mobility whereas the the VR player will have no 
+      mobility, but the ability to smash the fruits and throw their only weapon at the desktop player.
+      <span id = "coloredYellow">This project is intended to expand the interactiveness of VR, 
+         allowing both the singular VR players and those observing outside of VR to both have fun simulataneously.</span> 
+   </div>
+
+   <div id = "night_shift_switch" onclick="myFunction()"></div>
+
+   <script>
+   var blue = true;
+   
+   function myFunction() {
+      if(blue) {
+         document.getElementById("featured").style.backgroundImage = "url(bluelight_images/dog_orange.jpg)";
+         document.getElementById("night_shift_switch").style.backgroundImage = "url(bluelight_images/on_button.png)";
+         blue = false;
+      } else {
+         document.getElementById("featured").style.backgroundImage = "url(bluelight_images/dog_blue.jpg)";
+         document.getElementById("night_shift_switch").style.backgroundImage = "url(bluelight_images/off_button.png)";
+         blue = true;
+      }
+     
+   }
+   </script>
+   
+</div>
+
+
+
+
+
+<!-- Everything in the "third" section are styled in index.css -->
+<div id="third">
+   <!-- These are all parallax pictures imposed on top of everything else. (their position is absolute)
+   The javascript script above specifies their scroll speed.
+   Styling found in index.css -->
+   <div class = "scrollpic"></div>
+   <div class = "grouppic"></div>
+   <div class = "grouppic2"></div>
+   <div class = "gunnvrpic"></div>
+   <div class = "amplifyLogo"></div>
+   <div class = "meAndBro"></div>
+
+  
+   
+   <h2 class = "text" id = "about-me-text">BIO</h2>
+
+   <!-- Each <span> is styled in index.css to be orange and bold -->
+   <p class = "paragraph" id = "p1"> My name is <span>Jehan Kobe Chang</span>.</p>
+
+   <p class = "paragraph" id = "p2"> I am currently a freshman undergraduate at UC Irvine majoring in 
+      <span id = "coloredYellow">Computer Science</span>. 
+      I am also in the Campuswide Honors Program (CHP) -- which has me write 
+      <a class = "clickableText" href = "https://kobeblog872749184.wordpress.com/">articles</a> about the
+         <span id = "coloredBlue">social</span>, <span id = "coloredYellow">technological</span> 
+         impacts of <span id = "coloredRed">Empire and its Ruins</span>. 
+   </p>
+
+   <p class = "paragraph" id = "p3"> 
+      Here is my <a class = "clickableText" id = "b1" href = "resume.pdf">resume</a> 
+      and if you would like to know more about me, my email is 
+      <span id ="coloredGreen">jkobechang@gmail.com</span> or Facebook message me @ 
+      <span id ="coloredBlue">Kobe Chang</span>.
+   </p>
+
+   <p class = "paragraph" id = "p4"> When I was a junior attending 
+      <span id = "coloredRed">Henry M. Gunn High School</span>,
+      I founded and presided over the Gunn Virtual Reality Club. A year later, I published my 
+      <a class = "clickableText" href = "https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0">VR game onto Steam</a> .
+      Now, I am a Programming Officer for <a class = "clickableText" href = "www.vruci.com">VR @ UCI</a>.
+   </p>
+
+   <p class = "paragraph" id = "p4"> I have had two paid summer internships at
+      <a class = "clickableText" href= "http://amplify.ai/#welcome">Amplify.ai</a>.
+      This company specializes in "<span>AI-driven conversations</span>" 
+      and makes <span id = "coloredBlue">Facebook chatbots</span> for companies and campaigns
+      such as Cheetos, Sephora, <a class = "clickableText" href = "https://48months.mygov.in/">48 Months</a>, 
+      Flawless, etc.
+   </p>
+   
+
+   <p class = "paragraph" id = "p4"> <span id = "coloredYellow">Artificial Intelligence's</span> 
+      infinite applications stimulate my creativity and enable me to supercharge my projects. 
+      I aim to develop projects that utilize AI's capabilities in generating 
+      <span id = "coloredRed">positive</span>, <span id = "coloredBlue">social</span>, 
+      <span id = "coloredYellow">technological</span>, and <span id ="coloredGreen">environmental</span> 
+      impacts on the world (with a little <span id = "coloredRed">VR</span> thrown into the mix). 
+   </p>
+
+</div>
+
+
+<!-- For now I am copying and pasting the top nav to the bottom. 
+Will replace this with a different useful bar in the future. -->
+<div class = "topnav">
+      <a class = "logo" href ="bluelight.html"></a>
+      <div class = "navDiv" id = "negativesBox">
+         <a id = "negativesText" href = "#essential">Negatives</a></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#featured">Night-Shift Mode</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "#third">Applications</a></div>
+      
+</div>
+
+

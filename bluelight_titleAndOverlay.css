@@ -1,0 +1,193 @@
+/*
+For the "title" of the website and the colorful changing words.
+Includes overlays.
+Author: Jehan Kobe Chang
+*/
+.title {
+    margin: 2vw 0 0 3vw;
+    font-weight: 600;
+    float: left;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 7vw;
+}
+
+#essential_title {
+    margin: 4vw 0 0 8.5vw;
+    font-size: 6vw;
+    color:rgb(108, 218, 238)
+}
+
+#secondTitle {
+    margin: 4vw 0 0 23vw;
+}
+
+#secondProjectTitle {
+    font-weight: 600;
+    float: left;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 4vw;
+    margin: 30vw 0 0 5vw;
+    text-decoration: underline;
+}
+
+#secondProjectTitle:link{
+    color:  white;
+    z-index: 2;
+    position: relative;
+}
+
+
+#secondProjectTitle:visited{
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+#secondProjectTitle:hover{
+    color: rgb(109, 201, 255);
+    z-index: 2;
+    position: relative;
+}
+
+
+.variableWord{
+    margin: 30px 0 0 80px;
+    font-weight:500;
+    font-style:normal;
+    font-size: 4vw;
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+
+.variableWord span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: #99ffb3; 
+    
+}
+.variableWord span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    color: #fc5a5a;
+}
+.variableWord span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    color: #fffeb0;
+}
+.variableWord span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    color: #d5ff4a;
+}
+.variableWord span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: #ffe4b3;
+}
+.variableWord span:nth-child(7) { 
+    -webkit-animation-delay: 18s; 
+    -ms-animation-delay: 18s; 
+    animation-delay: 18s; 
+    color: #fffeb0;
+}
+
+.variableWord span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #fff389;
+    font-family: 'Raleway';
+    -webkit-animation: animateWord 21s ease-in-out infinite 0s;
+    -ms-animation: animateWord 21s ease-in-out infinite 0s;
+    animation: animateWord 21s ease-in-out infinite 0s;
+}
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    18% { opacity: 0; -webkit-transform: translateY(15px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.overlay, .video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.3);
+    z-index: 2;
+    
+  }
+
+  #firstScreenOverlay{
+    animation: popdown 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+@keyframes popdown{
+    0% {height: 0;}
+    
+    100%{
+        height: 60vw;}
+}
+#vroverlay{
+    height: 50vw;
+}
+
+
+/* Changing dimensions if it is on mobile platform */
+@media screen and (max-width:700px){
+
+    #essential_title {
+        margin: 4vw 0 0 7vw;
+        text-align: center;
+    }
+
+    #secondTitle {
+        margin: 4vw 0 0 15vw;
+        text-align: center;
+    }
+    
+
+    @keyframes popdown{
+        0% {height: 0;}
+        
+        100%{
+            height: 100vw;}
+    }
+
+    .title {
+        margin: 2vw 0 0 3vw;
+        font-size: 8vw;
+    }
+    
+    .variableWord{
+        margin: -3px 0 0 30px;
+        font-size: 5vw;
+    }
+
+    #vroverlay{
+        height: 90vw;
+    }
+
+    
+
+
+
+}
