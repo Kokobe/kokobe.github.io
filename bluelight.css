@@ -67,7 +67,7 @@ body{
     background: url(bluelight_images/dog_blue.jpg) 50% 0 no-repeat fixed;
     background-size: cover;
     color: white;
-    height: 130vw;
+    height: 170vw;
     margin: 0vw auto;
     overflow: hidden;
     padding: 0;
@@ -109,6 +109,11 @@ body{
     color: white;
     font-size: 2.8vw;
     margin: 5vw 0 0 5vw;
+
+}
+
+#left-textp2 {
+    margin: 5vw 0 0 0vw;
 
 }
 
@@ -198,7 +203,7 @@ body{
 
 
 .scrollpic{
-    background: url("images/me4.png") 0% 0 no-repeat;
+    background: url("bluelight_images/blueface.jpg") 0% 0 no-repeat;
     background-size: 25vw;      
     width: 40vw;
     height: 100%;
@@ -212,7 +217,7 @@ body{
 }
 
 .grouppic{
-    background: url("images/friends.png") 0% 0 no-repeat;   
+    background: url("bluelight_images/blueface.jpg") 0% 0 no-repeat;   
     background-size: 25vw;      
     width: 40vw;
     height: 100%;
@@ -279,7 +284,7 @@ body{
 }
 #about-me-text{
     font-family: 'Slabo 27px', serif;
-    font-size: 15vw;
+    font-size: 7vw;
     margin: 5vw 39vw;
     position: relative;
     width: 60vw;

@@ -15,7 +15,7 @@ $(document).ready(function(){
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
         $('#featured').parallax("50%", 0.5, true, 500, 1700);
         $('#third').parallax("50%", 0.3, true, 500, 2700);
-        $('.scrollPic').parallax("50%", 1.5);
+      
         $('.groupPic').parallax("50%", 1.2);
         $('.groupPic2').parallax("50%", .5);
         $('.gunnvrpic').parallax("50%", .4);
@@ -103,15 +103,29 @@ They are differentiated in index.css by child index! -->
 Has parallax scrolling of the background, so styling is in index.css  -->
 <div id="featured">
    <h2 class = "title" id = "secondTitle">Night-Shift Mode</h2>
-   <a class = "clickableText" id = "secondProjectTitle" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">What is Night-Shift Mode?</a>
-   <div class = "left-text">"Asymmetrical Virtual Reality" 
-      is where player interaction is split into two channels: the 
-      <span class = "underline"> desktop and the VR kit</span>. In this project game, one 
-      player uses the desktop to control one entity and the VR player will battle the desktop player.
-      The desktop player will throw fruits and have mobility whereas the the VR player will have no 
-      mobility, but the ability to smash the fruits and throw their only weapon at the desktop player.
-      <span id = "coloredYellow">This project is intended to expand the interactiveness of VR, 
-         allowing both the singular VR players and those observing outside of VR to both have fun simulataneously.</span> 
+   <a class = "clickableText" id = "secondProjectTitle" href = "https://support.apple.com/en-us/HT207570">What is Night-Shift Mode?</a>
+   <div class = "left-text"> Flip the switch above. See how the background shifts into warmer tones?  
+      Night-shift mode is essentially a mode where blue-light is minimized on your device screen. Apple and Android products all have
+      this function, but does it actually work? 
+      
+      <div class = "left-text" id="left-textp2"> 
+            <a class = "clickableText" href = "https://journals.sagepub.com/doi/full/10.1177/1477153517748189">
+               One study</a> performs a matched-pairs comparing usages of Night-shift mode. They found out that blue-light (no Night-Shift) does encourage 
+         melatonin suppression, but melatonin suppression did not significantly differ between the mode being on/off. However, the long-term
+         benefits of using Night-Shift mode still need to be researched.  </div>
+
+         <div class = "left-text" id="left-textp2"> 
+               <a class = "clickableText" href = "https://journals.sagepub.com/doi/full/10.1177/1477153517748189">
+                  Studies on other methods of blocking blue-light emission</a> 
+                  also offer some insight: orange-tinted glasses significantly reduces short wavelength emissions (blue and purple light). 
+                  Color adjustment apps (performing like Night-Shift mode) are also very effective in reducing these short-wave emissions. 
+
+         
+            <span id = "coloredYellow"> Overall, we don't know yet the extent of the adverse effects of blue-light. There is evidence
+               of several negative effects, and we have tools to help reduce these short-term and potentially long-term effects. 
+            </span> </div>
+
+
    </div>
 
    <div id = "night_shift_switch" onclick="myFunction()"></div>
@@ -144,7 +158,7 @@ Has parallax scrolling of the background, so styling is in index.css  -->
    <!-- These are all parallax pictures imposed on top of everything else. (their position is absolute)
    The javascript script above specifies their scroll speed.
    Styling found in index.css -->
-   <div class = "scrollpic"></div>
+  
    <div class = "grouppic"></div>
    <div class = "grouppic2"></div>
    <div class = "gunnvrpic"></div>
@@ -153,21 +167,20 @@ Has parallax scrolling of the background, so styling is in index.css  -->
 
   
    
-   <h2 class = "text" id = "about-me-text">BIO</h2>
+   <h2 class = "text" id = "about-me-text">Blue-light isn't entirely bad...</h2>
 
    <!-- Each <span> is styled in index.css to be orange and bold -->
-   <p class = "paragraph" id = "p1"> My name is <span>Jehan Kobe Chang</span>.</p>
+   <p class = "paragraph" id = "p1"> There are several good applications of blue-light. </p>
 
-   <p class = "paragraph" id = "p2"> I am currently a freshman undergraduate at UC Irvine majoring in 
-      <span id = "coloredYellow">Computer Science</span>. 
-      I am also in the Campuswide Honors Program (CHP) -- which has me write 
-      <a class = "clickableText" href = "https://kobeblog872749184.wordpress.com/">articles</a> about the
-         <span id = "coloredBlue">social</span>, <span id = "coloredYellow">technological</span> 
-         impacts of <span id = "coloredRed">Empire and its Ruins</span>. 
+   <p class = "paragraph" id = "p2"> 
+      For example, this blue-light mask is used for 
+      <a class = "clickableText" href = "https://www.wish.com/product/5c26ce76354e442340e9d345?hide_login_modal=true&from_ad=goog_shopping&_display_country_code=US&_force_currency_code=USD&pid=googleadwords_int&c=%7BcampaignId%7D&ad_cid=5c26ce76354e442340e9d345&ad_cc=US&ad_curr=USD&ad_price=35.00&fallback_cids=5c089ab1aea0904856094ee15d19e55c8c241e1132ba544e&campaign_id=7203534630&gclid=EAIaIQobChMIjNOm5MSk5gIVhONkCh0nDQzYEAQYByABEgIu4fD_BwE">
+         skin rejuvenation therapy</a>. Blue-light radiation is used to elimnate certain kinds of moles, clear acne, and acne scars.
+         Of course, the blue-light emission from phones and computers are not specific/powerful enough for this. 
    </p>
 
    <p class = "paragraph" id = "p3"> 
-      Here is my <a class = "clickableText" id = "b1" href = "resume.pdf">resume</a> 
+     More specifically related to our circadian rhythms, light therapy is used to  <a class = "clickableText" id = "b1" href = "resume.pdf">resume</a> 
       and if you would like to know more about me, my email is 
       <span id ="coloredGreen">jkobechang@gmail.com</span> or Facebook message me @ 
       <span id ="coloredBlue">Kobe Chang</span>.
