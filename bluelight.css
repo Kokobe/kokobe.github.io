@@ -176,12 +176,17 @@ body{
    
     background-size: 120vw;
     color: white;
-    height: 210vw;
+    height: 180vw;
    
     margin: 0;
     overflow: hidden;
     padding: 0;
 
+}
+
+#workscited{
+    background-color: #1f1f1f;
+    height: 180vw;
 }
 
 
@@ -223,8 +228,9 @@ body{
     height: 100%;
     padding: 0;
     position: absolute;
-    margin: 15vw 0vw;
+    margin: 35vw 0vw;
     z-index: 200;
+    
     
     overflow: hidden;
 
@@ -244,29 +250,30 @@ body{
 }
 
 .gunnvrpic{
-    background: url("images/gvrclub.png") 50% 0 no-repeat;
+    background: url("bluelight_images/Circadian-misalignment.png") 50% 0 no-repeat;
     background-size: 40vw;      
     width: 40vw;
-    height: 80vw;
+    height: 25vw;
     padding: 0;
     position: absolute;
-    margin: 80vw 0vw 0 0;
+    margin: 80vw 0.5vw;
     z-index: 200;
+    
+
     
     overflow: hidden;
 }
 
 .amplifyLogo{
     
-    background: url("images/amplifyAIlogo.png") 50% 0 no-repeat;
-    background-size: 40vw;      
+    background: url("bluelight_images/moon.png") 50% 0 no-repeat;
+    background-size: 20vw;      
     width: 40vw;
     height: 40vw;
     padding: 0;
     position: absolute;
     margin: 130vw 0vw 0 0;
     z-index: 200;
-    
     overflow: hidden;
  
 }
@@ -349,7 +356,8 @@ u{
     margin-top: 15vw;
 }
 #p4{
-    margin-top: 9vw;
+    margin-top: 30vw;
+    
 }
 
 
@@ -436,6 +444,7 @@ u{
         margin: 0vw auto;
         background-repeat: no-repeat;
         background-size: 140vw;
+        
     }
 
     
