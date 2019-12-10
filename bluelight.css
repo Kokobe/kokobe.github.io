@@ -31,12 +31,26 @@ body{
 #essential{
     background-color: #1d1d1d;
     color: white;
-    height: 150vw;
+    height: 120vw;
     margin: 0vw auto;
     overflow: hidden;
     padding: 0;
     width: 100%;
 }
+
+
+#essential2{
+    background-color: #1d1d1d;
+    color: white;
+    height: 200vw;
+    margin: 0vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+
+
 .essential_image_settings{
     width: 50vw;
     height: 50vw;
@@ -53,13 +67,12 @@ body{
 }
 
 #essential_image2{
-    background: url("images/party.JPG") 0% 0 no-repeat;
-    background-size: 60vw;  
-    background-color: aliceblue;
+    background: url("bluelight_images/circadian_infographic.png") 0% 0 no-repeat;
+    background-size: 50vw;  
     width: 60vw;
     height: 35vw;
-    margin: -99vw 0 0 20vw;
-    border-radius: 20px;
+    margin: 35vw 0 0 26vw;
+ 
 }
 
 
@@ -194,8 +207,22 @@ body{
     margin: 0;
     overflow: hidden;
     padding: 0;
-
 }
+
+#lilys_eye{
+    background-color: #1f1f1f;
+    
+    background: url(bluelight_images/lilyeye.png) no-repeat fixed;
+   background-position: 0vw 50vw;
+    background-size: 120vw;
+    color: white;
+    height: 75vw;
+   
+    margin: 0vw auto;
+    overflow: hidden;
+    padding: 0;
+}
+
 
 #workscited{
     background-color: #1f1f1f;
