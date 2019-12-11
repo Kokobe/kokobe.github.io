@@ -42,7 +42,7 @@ body{
 #essential2{
     background-color: #1d1d1d;
     color: white;
-    height: 200vw;
+    height: 250vw;
     margin: 0vw auto;
     overflow: hidden;
     padding: 0;
@@ -72,8 +72,16 @@ body{
     width: 60vw;
     height: 35vw;
     margin: 35vw 0 0 26vw;
- 
 }
+
+#essential_image3{
+    background: url("bluelight_images/graphs.png") 0% 0 no-repeat;
+    background-size: 50vw;  
+    width: 60vw;
+    height: 15vw;
+    margin: 75vw 0 0 26vw;
+}
+
 
 
 #featured{
