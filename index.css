@@ -28,6 +28,95 @@ body{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
+#selectedprojects {
+    background-color: black;
+    color: white;
+    height: 115vw;
+    margin: 0vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+
+.selectedprojects_titletext{
+    font-weight: 600;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 7vw;
+
+    position: absolute;
+    margin: 10vw 18vw;
+    width: 60vw;
+    height: 11vw;
+    text-align: center;
+    padding: 3vw;
+    opacity: 0;
+    
+    transition: opacity 1.5s .25s ease-in-out,
+                transform 4s 0s cubic-bezier(0,1,.3,1);
+    will-change: opacity, transform;
+}
+
+.selectedprojects_titletext.is-visible
+{
+    transform: translate(0%, -50%);
+    opacity: 1;
+}
+
+
+.selectedprojects_image_settings{
+    background: url("images/art.png") 0% 0 no-repeat;
+    background-size: 60vw;  
+    margin: 20vw 20vw;
+    border-radius: 20px;
+    width: 60vw;
+    height: 130vw;
+    background-position-y: center;
+    z-index: 200;
+    opacity: 0;
+    will-change: opacity, transform;
+    transition: opacity 1s .10s ease-in-out,
+                transform 3s 0s cubic-bezier(0,1,.3,1);
+}
+
+.selectedprojects_image_settings.is-visible
+{
+    transform: translate(0%, -15%);
+    opacity: 0.4;
+}
+
+.semi-trans-box
+{
+    position: absolute;
+    margin: -110vw 21vw;
+    width: 47vw;
+    height: 20vw;
+    text-align: center;
+    padding: 5vw;
+    opacity: 1;
+    transition: opacity 1.5s .25s ease-in-out,
+                transform 2s 0s cubic-bezier(0,1,.3,1);
+    will-change: opacity, transform;
+}
+
+.semi-trans-box.is-visible
+{
+    transform: translate(0%, -80%);
+    opacity: 1;
+}
+
+
+.selectedprojects_text
+{
+    font-weight: 600;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 4.2vw;
+}
+
+
+
 #essential{
     background-color: black;
     color: white;
@@ -335,14 +424,14 @@ u{
 
 
 .clickableText:link{
-    color:  rgb(255, 167, 109);
+    color:  rgb(255, 209, 109);
     z-index: 2;
     position: relative;
 }
 
 
 .clickableText:visited{
-    color: rgb(255, 167, 109);
+    color:  rgb(255, 209, 109);
     z-index: 2;
     position: relative;
 }

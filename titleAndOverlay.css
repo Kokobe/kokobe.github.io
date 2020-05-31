@@ -12,12 +12,19 @@ Author: Jehan Kobe Chang
     font-size: 7vw;
 }
 
+#selectedprojects_title {
+    margin: -65vw 8vw;
+    font-size: 10vw;
+    color: white;
+    position: absolute;
+}
+
 #essential_title {
     margin: 4vw 0 0 8.5vw;
 }
 
 #secondTitle {
-    margin: 4vw 0 0 25vw;
+    margin: 4vw 0 0 21vw;
 }
 
 #secondProjectTitle {

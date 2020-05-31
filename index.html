@@ -6,7 +6,7 @@
 <link href="titleAndOverlay.css" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="parallax.js"></script>
+<script src="javascripts/parallax.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -20,12 +20,16 @@ $(document).ready(function(){
         $('.groupPic2').parallax("50%", .5);
         $('.gunnvrpic').parallax("50%", .4);
         $('.amplifyLogo').parallax("50%", .2);
-        $('.meAndBro').parallax("50%", .3);
+        $('.meAndBro').parallax("50%", .3);  
+        // all elements with class "show-on-scroll" as array
+
+
 });
 </script>
 
 <!-- Needed to support multiple window widths -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 
 <!-- Top navigation. Styling found in nav.css -->
@@ -72,7 +76,20 @@ They are differentiated in index.css by child index! -->
    </div>
 </div>
 
+<div id="selectedprojects">
+   <div class = "selectedprojects_titletext show-on-scroll ">Selected Projects </div>
+   <div class = "selectedprojects_image_settings show-on-scroll"></div>
+   
+   <div class = "semi-trans-box show-on-scroll stay">
+   <div class = "selectedprojects_text">
+      Virtual Reality, <br> Android Development, <br> Machine Learning, <br>
+      <a class = "clickableText" href = "https://kobeblog872749184.wordpress.com/">And More!</a>
 
+   </div>
+</div>
+</div>
+
+<!-- 
 <div id="essential">
    <h2 class = "title" id = "essential_title" >My internship at Essential</h2>
    <div class = "center-text"> Working at Essential has galvanized my growth as a programmer, creative thinker, and a communicator. </div>
@@ -91,6 +108,8 @@ They are differentiated in index.css by child index! -->
       <div class = "center-text"> 
             It was an electrifyingly fun experience to work on Andy Rubin's team. Can't wait to see where I go next! </div>
       </div>
+
+-->
 <!-- This div will feature my selected projects.
 Has parallax scrolling of the background, so styling is in index.css  -->
 <div id="featured">
@@ -208,3 +227,6 @@ Will replace this with a different useful bar in the future. -->
       <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
 </div>
 
+
+<!-- moved here so that document loads before scanning for "show-on-scroll" class-->
+<script src="javascripts/show-on-scroll.js"></script>
