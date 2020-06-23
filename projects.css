@@ -34,7 +34,7 @@ body{
 
 #project2_article
 {
-    height: 230vw;
+    height: 210vw;
 }
 
 #project2_text
@@ -53,4 +53,20 @@ body{
     overflow: hidden;
     padding: 0;
     width: 100%;
+}
+
+#project2_pic3{
+    background: url(images/project2_pic3.png) 50% 0 no-repeat;
+    background-size: 50vw;
+    color: white;
+    height: 70vw;
+    margin: 10vw auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+#project2_button
+{
+    margin: -5vw 0 0 36vw;
+    
 }
