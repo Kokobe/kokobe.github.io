@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    background-color: #282C34;
+    padding: 0;
+}
+
+
+#selectedprojects_headerdiv {
+    background-color: #282C34;
+    color: white;
+    height: 40vw;
+    margin: 0vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#heading_text
+{
+    margin: 23vw 6vw;
+    font-size: 2vw;
+}

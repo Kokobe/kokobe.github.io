@@ -13,7 +13,7 @@ $(document).ready(function(){
         //.parallax(xPosition, speedFactor, outerHeight) options:
         //xPosition - Horizontal position of the element
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        $('#featured').parallax("50%", 0.5, true, 500, 1700);
+      
         $('#third').parallax("50%", 0.3, true, 500, 2700);
         $('.scrollPic').parallax("50%", 1.5);
         $('.groupPic').parallax("50%", 1.2);
@@ -78,15 +78,13 @@ They are differentiated in index.css by child index! -->
 
 <div id="selectedprojects">
    <div class = "selectedprojects_titletext show-on-scroll ">Selected Projects </div>
-   <div class = "selectedprojects_image_settings show-on-scroll"></div>
-   
-   <div class = "semi-trans-box show-on-scroll stay">
-   <div class = "selectedprojects_text">
-      Virtual Reality, <br> Android Development, <br> Machine Learning, <br>
-      <a class = "clickableText" href = "https://kobeblog872749184.wordpress.com/">And More!</a>
+   <a href="https://kobeblog872749184.wordpress.com/"> <div class="project_pic" id ="project1" > </div> </a>
+   <a href="https://kobeblog872749184.wordpress.com/"> <div class="project_pic" id ="project2" > </div> </a>
+   <a href="https://kobeblog872749184.wordpress.com/"> <div class="project_pic" id ="project3" > </div> </a>
+   <a href="https://kobeblog872749184.wordpress.com/"> <div class="project_pic" id ="project4" > </div> </a>
+   <a href="https://kobeblog872749184.wordpress.com/"> <div class="project_pic" id ="project5" > </div> </a>
+   <a href="https://kobeblog872749184.wordpress.com/"> <div class="project_pic" id ="project6" > </div> </a>
 
-   </div>
-</div>
 </div>
 
 <!-- 
@@ -112,6 +110,7 @@ They are differentiated in index.css by child index! -->
 -->
 <!-- This div will feature my selected projects.
 Has parallax scrolling of the background, so styling is in index.css  -->
+<!-- 
 <div id="featured">
    <h2 class = "title" id = "secondTitle">Featured Projects</h2>
    <a class = "clickableText" id = "secondProjectTitle" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Asymmetrical Fruit Ninja</a>
@@ -129,13 +128,13 @@ Has parallax scrolling of the background, so styling is in index.css  -->
    <div class = "secondImageSettings" id = "asymImage3"></div>
    <a class = "website-button" id = "asymLinkButton" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Try it out!</a>
 </div>
-
+-->
 
 <!-- I had to separate the overlay and the video itself.
 Its okay because .video-overlay has an absolute position.
 You can find the styling to this in titleAndOverlay.css -->
 <div class = "video-overlay" id = "vroverlay">
-      <h2 id = "VR-text" class = "text">MY VIRTUAL REALITY GAME</h2>
+      <h2 id = "VR-text" class = "text">My Virtual Reality Game</h2>
       <!-- styling for the class "website-button" is in index.css because I intend
       to use it independently of overlays. Will be used in "second" div.-->
       <a class = "website-button" id = "gameLinkButton" href = "https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0">Check it out!</a>
