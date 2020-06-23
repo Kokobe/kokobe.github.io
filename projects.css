@@ -31,6 +31,19 @@ body{
     width: 100%;
 }
 
+
+#project3_article
+{
+    height: 40vw;
+    background-color: rgb(51, 97, 57);
+}
+
+#project3_pic
+{
+    background: url(images/project5_pic.png) 50% 0 no-repeat fixed;
+    background-size: 101vw;
+}
+
 #project4_article
 {
     height: 170vw;
