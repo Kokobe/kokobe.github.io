@@ -308,8 +308,8 @@ body{
    
     background-size: 120vw;
     color: white;
-    height: 210vw;
-   
+    height: 85vw;
+    width: auto;
     margin: 0;
     overflow: hidden;
     padding: 0;
@@ -414,14 +414,63 @@ body{
     z-index: 200;
     overflow: hidden;
 }
-#about-me-text{
+
+#profile_pic
+{
+    background: url("images/me_circle.png") 50% 0 no-repeat;
+    background-size: 20vw;      
+    width: 30vw;
+    height: 27vw;
+    padding: 0;
+    position: absolute;
+    margin: 5vw 36vw;
+    z-index: 200;
+    overflow: hidden;
+}
+
+#about_me_textbox
+{
+    width: 95vw;
+    height: 60vw;
+    padding: 0;
+    position: absolute;
+    margin: 15vw 2.3vw;
+    z-index: 199;
+    background-color: #272525;
+    border-radius: 25px;
+}
+
+#about_me_title{
     font-family: 'Muli', sans-serif;
     font-size: 15vw;
-    margin: 5vw 39vw;
+    margin: -0vw 50vw;
     position: relative;
     width: 60vw;
     height: 10vw;
     text-decoration: underline;
+    color: whitesmoke
+}
+
+#about_me_name
+{
+    color: whitesmoke;
+    font-family: 'Raleway';
+    font-size: 5vw;
+    margin: 12vw 27.5vw;
+    width: 50vw;
+    z-index: 201;
+    font-weight: bold;
+}
+
+.about_me_text
+{
+    font-family: 'Muli', sans-serif;
+    font-size: 2vw;
+    margin: -10vw 0vw;
+    position: relative;
+    width: 95%;
+    padding: 3vw;
+    color: whitesmoke
 }
 
 .paragraph{
