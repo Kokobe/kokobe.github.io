@@ -5,7 +5,7 @@ body{
 }
 
 
-#selectedprojects_headerdiv {
+.selectedprojects_headerdiv {
     background-color: #282C34;
     color: white;
     height: 40vw;
@@ -19,4 +19,38 @@ body{
 {
     margin: 23vw 6vw;
     font-size: 2vw;
+}
+
+#project2_pic{
+    background: url(images/glorious_noon_new.png) 50% 0 no-repeat fixed;
+    background-size: 100vw;
+    color: white;
+    height: 50vw;
+    margin: 0vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#project2_article
+{
+    height: 230vw;
+}
+
+#project2_text
+{
+    margin: 25vw 6vw;
+    font-size: 2vw;
+    color: #dddddde3
+}
+
+#project2_pic2{
+    background: url(images/project2_pic2.png) 50% 0 no-repeat fixed;
+    background-size: 50vw;
+    color: white;
+    height: 50vw;
+    margin: 10vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
 }
