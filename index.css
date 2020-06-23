@@ -594,11 +594,13 @@ u{
 
 /* For half-window size */
 @media screen and (max-width:700px){
-    .center-text {
+    .center-text 
+    {
         font-size: 5vw;
     }
 
-    #featured{
+    #featured
+    {
         height: 200vw;
         margin: 0vw auto;
         background-repeat: no-repeat;
@@ -606,18 +608,46 @@ u{
         
     }
 
-    #videoDiv{
+    #videoDiv
+    {
        
         position: relative;
         height: 90vw;
         overflow: hidden;
     
     }
-    #third{
+    
+    #third
+    {
         height: 220vw;
         margin: 0vw auto;
         background-repeat: no-repeat;
         background-size: 140vw;
+    }
+
+
+    #about_me_textbox
+    {
+        width: 95vw;
+        height: 180vw;
+        padding: 0;
+        position: absolute;
+        margin: 15vw 2.3vw;
+        z-index: 199;
+        background-color: #272525;
+        border-radius: 25px;
+    }
+    #about_me_name
+    {
+        margin: 15vw 12vw;
+        font-size: 8vw;
+        width: 70vw;
+    }
+
+    .about_me_text
+    {
+        font-size: 4vw;
+        line-height: 6vw;
     }
 
     
@@ -629,18 +659,22 @@ Look at index.html @ the javascript script at the top
 and also at parallax.js  */
 @media screen and (max-width:500px){
 
-    #essential {
+    #essential 
+    {
         height: 330vw;
     }
 
-    .essential_image_settings{
+    .essential_image_settings
+    {
         width: 100vw;
         height: 100vw;
         padding: 0;
         margin: 34vw 0 0 20vw;
         z-index: 200;
     }
-    #essential_image1{
+
+    #essential_image1
+    {
         background: url("images/essential_tools.png") 0% 0 no-repeat;
         background-size: 80vw;  
         background-color: aliceblue;
@@ -650,7 +684,8 @@ and also at parallax.js  */
         border-radius: 20px;
     }
     
-    #essential_image2{
+    #essential_image2
+    {
         background: url("images/party.JPG") 0% 0 no-repeat;
         background-size: 100vw;  
         background-color: aliceblue;
@@ -663,26 +698,43 @@ and also at parallax.js  */
 
 
 
-    #featured{
+    #featured
+    {
         height: 150vw;
         background-size: 400vw;
         background-position: auto 1000vw;
     }
 
-    #third{
+    #third
+    {
         background-size: 300vw;
     }
 
-    .meAndBro{
+    #about_me_name
+    {
+        font-size: 10vw;
+    }
+
+    .about_me_text
+    {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+
+    .meAndBro
+    {
         height:70vw;
         
     }
 
-    #asymLinkButton{
+    #asymLinkButton
+    {
         margin: 120vw 0 0 20vw;
     }
     
-    #gameLinkButton{
+    #gameLinkButton
+    {
         margin: 83vw 0 0 42vw;
     }
     
