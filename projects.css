@@ -31,11 +31,22 @@ body{
     width: 100%;
 }
 
+
+#project4_pic
+{
+    background: url(images/project4_pic.png) 50% 0 no-repeat fixed;
+    background-size: 101vw;
+}
+
 #project5_pic
 {
     background: url(images/Poster.png) 50% 0 no-repeat;
     background-size: 100vw;
     height: 60vw;
+}
+#project5_article
+{
+    height: 40vw;
 }
 
 

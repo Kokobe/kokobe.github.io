@@ -14,8 +14,8 @@ $(document).ready(function(){
         //.parallax(xPosition, speedFactor, outerHeight) options:
         //xPosition - Horizontal position of the element
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        $('#project6_pic').parallax("50%", 0.5, true, 500, 1700);
-        $('#project6_pic2').parallax("50%", 0.5, true, 500, 1700);
+        $('#project4_pic').parallax("50%", 0.5, true, 500, 1700);
+       // $('#project6_pic2').parallax("50%", 0.5, true, 500, 1700);
        // $('#project6_pic3').parallax("50%", 0.8, true, 500, 1700);
         // all elements with class "show-on-scroll" as array
 
@@ -47,17 +47,34 @@ $(document).ready(function(){
 
 
 
-<div class="project_article_pic" id="project5_pic">
+<div class="project_article_pic" id="project4_pic">
 </div>
 
-<div class="selectedprojects_headerdiv" id="project5_article">
-   <div class = "selectedprojects_titletext show-on-scroll "> Reducing Food Waste In Grocery Stores </div>
+<div class="selectedprojects_headerdiv" id="project6_article">
+   <div class = "selectedprojects_titletext show-on-scroll ">Walkie Talkie</div>
    
    <div class="selectedprojects_text" id="project6_text">
-    I created this poster from scratch in Sketch. It did take a while to 
-    choose the find a nice color palette and transfer my group member's inputs
-    into design. Just thought it was cool that 
-    Sketch can be applied to do things outside of UI/UX :)
+    The image above shows how much I can push my 3D models and lighting to achieve a somewhat stable 72 FPS on the Oculus Quest.
+        Sadly, the only problem is that when physics are implemented, it drops the FPS to around 65. If I am going to fix this,
+        I would either have to optimize my physics engine or look into some optimization methods. 
+
+    <div  id="project6_pic2"></div>
+ 
+       Porting the PC version of Glorious Noon to the Oculus Quest was hard to do. 
+        For example, I had to unsubdivide my models to reduce the detail/triangles. 
+        I also had to rework some of the physics code because I didn't write code as cleanly as 
+        I should have when I made 
+        <a class = "clickableText" href= "https://store.steampowered.com/app/724870/Glorious_Noon/">Glorious Noon</a> in high school. 
+        
+    <br> <br>
+
+    Although the Quest has a comparable resolution to the original Rift, the image 
+    quality for mobile Unity games still became less bright and more ugly. I created
+    some new skyboxes with realistic lighting to compensate. 
+
+    <div id="project6_pic3"></div>
+
+    <a class = "website-button" id = "project6_button" href = "https://github.com/Kokobe/Glorious-Noon-Remake">Check it out!</a>
 
    </div>
 </div>
