@@ -1,0 +1,109 @@
+<link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<link href="nav.css" rel="stylesheet">
+<link href="slider.css" rel="stylesheet">
+<link href="titleAndOverlay.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="javascripts/parallax.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('#featured').parallax("50%", 0.3, true, 500, 2700);
+        $('#third').parallax("50%", 0.3, true, 500, 2700);
+        $('.scrollPic').parallax("50%", 1.5);
+        $('.groupPic').parallax("50%", 1.2);
+        $('.groupPic2').parallax("50%", .5);
+        $('.gunnvrpic').parallax("50%", .4);
+        $('.amplifyLogo').parallax("50%", .2);
+        $('.meAndBro').parallax("50%", .3);  
+        // all elements with class "show-on-scroll" as array
+
+
+});
+</script>
+
+<!-- Needed to support multiple window widths -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- Top navigation. Styling found in nav.css -->
+<div class = "topnav">
+      <a class = "logo" href ="index.html"></a>
+      <div class = "navDiv">
+         <span id = "emailText">jkobechang@gmail.com </span></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#third">About me</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "#featured">Projects</a></div>
+      <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
+      <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+      <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+      
+</div>
+
+<!-- 
+<div id="essential">
+   <h2 class = "title" id = "essential_title" >My internship at Essential</h2>
+   <div class = "center-text"> Working at Essential has galvanized my growth as a programmer, creative thinker, and a communicator. </div>
+   <div class = "essential_image_settings" id = "essential_image1"></div>
+   <div class = "center-text"> Using the tools above (these are only a selected few), I created and refined apps for their 
+         <a class = "clickableText" href = "https://www.theverge.com/2019/10/8/20905525/andy-rubin-elongated-phone-essential-android">new mobile device</a>, 
+         gave presentations of my projects to the entire company,
+      and got to learn from a plethora of talented developers. </div>
+
+      <div class = "center-text"> 
+            Here is a picture from the goodbye party they threw me.  </div>
+      </div>
+
+      <div class = "essential_image_settings" id = "essential_image2"></div>
+
+      <div class = "center-text"> 
+            It was an electrifyingly fun experience to work on Andy Rubin's team. Can't wait to see where I go next! </div>
+      </div>
+
+-->
+
+<div id="featured">
+   <h2 class = "title" id = "secondTitle">Asymmetrical VR   </h2>
+   <a class = "clickableText" id = "secondProjectTitle" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Asymmetrical Fruit Ninja</a>
+   <div class = "left-text">"Asymmetrical Virtual Reality" 
+      is where player interaction is split into two channels: the 
+      <span class = "underline"> desktop and the VR kit</span>. In this project game, one 
+      player uses the desktop to control one entity and the VR player will battle the desktop player.
+      The desktop player will throw fruits and have mobility whereas the the VR player will have no 
+      mobility, but the ability to smash the fruits and throw their only weapon at the desktop player.
+      <span id = "coloredYellow">This project is intended to expand the interactiveness of VR, 
+         allowing both the singular VR players and those observing outside of VR to both have fun simulataneously.</span> 
+   </div>
+   <div class = "secondImageSettings" id = "asymImage1"></div>
+   <div class = "secondImageSettings" id = "asymImage2"></div>
+   <div class = "secondImageSettings" id = "asymImage3"></div>
+   <a class = "website-button" id = "asymLinkButton" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Try it out!</a>
+</div>
+
+
+
+<!-- For now I am copying and pasting the top nav to the bottom. 
+Will replace this with a different useful bar in the future. -->
+<div class = "topnav">
+      <a class = "logo" href ="index.html"></a>
+      <div class = "navDiv">
+         <span id = "emailText">jkobechang@gmail.com </span></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#third">About me</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "#featured">Projects</a></div>
+      <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
+      <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+      <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+</div>
+
+
+<!-- moved here so that document loads before scanning for "show-on-scroll" class-->
+<script src="javascripts/show-on-scroll.js"></script>

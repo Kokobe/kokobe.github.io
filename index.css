@@ -24,7 +24,7 @@ body{
 #VR-text{
     
     font-weight: bold;
-    font-size: 12vw;
+    font-size: 8vw;
     font-family: 'Raleway';
 }
 
@@ -215,7 +215,7 @@ body{
 
 
 #featured{
-    background: url(images/betterFuji.png) 50% 0 no-repeat fixed;
+    background: url(images/Mt.\ Fuji2.png) 50% 0 no-repeat fixed;
     background-size: 200vw;
     color: white;
     height: 130vw;
