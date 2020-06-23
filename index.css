@@ -625,21 +625,23 @@ u{
         background-size: 140vw;
     }
 
+    #profile_pic
+    {
+        background-size: 30vw;      
+        width: 30vw;
+        height: 30vw;
+        margin: 15vw 36vw;
+    }
+
 
     #about_me_textbox
     {
-        width: 95vw;
         height: 180vw;
-        padding: 0;
-        position: absolute;
-        margin: 15vw 2.3vw;
-        z-index: 199;
-        background-color: #272525;
-        border-radius: 25px;
+        margin: 30vw 2.3vw;
     }
     #about_me_name
     {
-        margin: 15vw 10.5vw;
+        margin: 20vw 10.5vw;
         font-size: 8vw;
         width: 80vw;
     }
@@ -694,21 +696,43 @@ and also at parallax.js  */
         margin: -140vw 0 0 5vw;
         border-radius: 20px;
     }
-    
-
-    #featured
-    {
-        height: 150vw;
-        background-size: 400vw;
-        background-position: auto 1000vw;
-    }
 
     #third
     {
+        height: 370vw;
         background-size: 300vw;
     }
 
+    #about_me_textbox
+    {
+        height: 340vw;
+        margin: 20vw 2.3vw;
+    }
 
+    #profile_pic
+    {
+        background-size: 35vw;      
+        width: 35vw;
+        height: 35vw;
+        margin: 5vw 34vw;
+    }
+
+
+
+    #about_me_name
+    {
+        margin: 40vw 8vw;
+        font-size: 9vw;
+        width: 80vw;
+    }
+
+    .about_me_text
+    {
+        font-size: 6vw;
+        line-height: 8vw;
+        margin: -30vw 0vw;
+        width: 90vw;
+    }
    
     .meAndBro
     {
