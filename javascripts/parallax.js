@@ -41,7 +41,7 @@
 		function update(){
 			var pos = $window.scrollTop();				
 
-			if (widthLimit === null || $window.width() > widthLimit ){
+			if (widthLimit === null || $window.width() >= widthLimit ){
 				firstTop = $this.offset().top;
 				$this.each(function(){
 					var $element = $(this);

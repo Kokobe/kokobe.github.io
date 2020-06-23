@@ -710,18 +710,7 @@ and also at parallax.js  */
         background-size: 300vw;
     }
 
-    #about_me_name
-    {
-        font-size: 10vw;
-    }
-
-    .about_me_text
-    {
-        font-size: 2vw;
-        line-height: 3vw;
-    }
-
-
+   
     .meAndBro
     {
         height:70vw;
