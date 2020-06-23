@@ -453,7 +453,7 @@ body{
 
 #about_me_name
 {
-    color: whitesmoke;
+    color:  rgb(255, 167, 109);
     font-family: 'Raleway';
     font-size: 5vw;
     margin: 12vw 27.5vw;
@@ -470,7 +470,8 @@ body{
     position: relative;
     width: 95%;
     padding: 3vw;
-    color: whitesmoke
+    color: #d8d8d8;
+    line-height: 3vw;
 }
 
 .paragraph{
