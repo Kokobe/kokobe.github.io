@@ -4,7 +4,6 @@
 <link href="nav.css" rel="stylesheet">
 <link href="slider.css" rel="stylesheet">
 <link href="titleAndOverlay.css" rel="stylesheet">
-<link href="projects.css" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="javascripts/parallax.js"></script>
@@ -14,9 +13,14 @@ $(document).ready(function(){
         //.parallax(xPosition, speedFactor, outerHeight) options:
         //xPosition - Horizontal position of the element
         //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        $('#project2_pic').parallax("50%", 0.5, true, 500, 1700);
-        $('#project2_pic2').parallax("50%", 0.5, true, 500, 1700);
-       // $('#project2_pic3').parallax("50%", 0.8, true, 500, 1700);
+        $('#featured').parallax("50%", 0.3, true, 500, 2700);
+        $('#third').parallax("50%", 0.3, true, 500, 2700);
+        $('.scrollPic').parallax("50%", 1.5);
+        $('.groupPic').parallax("50%", 1.2);
+        $('.groupPic2').parallax("50%", .5);
+        $('.gunnvrpic').parallax("50%", .4);
+        $('.amplifyLogo').parallax("50%", .2);
+        $('.meAndBro').parallax("50%", .3);  
         // all elements with class "show-on-scroll" as array
 
 
@@ -30,52 +34,57 @@ $(document).ready(function(){
 
 <!-- Top navigation. Styling found in nav.css -->
 <div class = "topnav">
-    <a class = "logo" href ="index.html"></a>
-    <div class = "navDiv">
-       <span id = "emailText">jkobechang@gmail.com </span></div>
-    <div class = "navDiv" id = "aboutmeBox">
-       <a id = "aboutmeText" href = "#third">About me</a></div>
-    <div class = "navDiv" id = "projectsBox">
-          <a id = "projectsText" href = "index.html#selectedprojects">Projects</a></div>
-    <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
-    <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
-    <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
-</div>
+      <a class = "logo" href ="index.html"></a>
+      <div class = "navDiv">
+         <span id = "emailText">jkobechang@gmail.com </span></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#third">About me</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "index.html#selectedprojects">Projects</a></div>
+      <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
+      <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+      <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+  </div>
 
+<!-- 
+<div id="essential">
+   <h2 class = "title" id = "essential_title" >My internship at Essential</h2>
+   <div class = "center-text"> Working at Essential has galvanized my growth as a programmer, creative thinker, and a communicator. </div>
+   <div class = "essential_image_settings" id = "essential_image1"></div>
+   <div class = "center-text"> Using the tools above (these are only a selected few), I created and refined apps for their 
+         <a class = "clickableText" href = "https://www.theverge.com/2019/10/8/20905525/andy-rubin-elongated-phone-essential-android">new mobile device</a>, 
+         gave presentations of my projects to the entire company,
+      and got to learn from a plethora of talented developers. </div>
 
+      <div class = "center-text"> 
+            Here is a picture from the goodbye party they threw me.  </div>
+      </div>
 
+      <div class = "essential_image_settings" id = "essential_image2"></div>
 
+      <div class = "center-text"> 
+            It was an electrifyingly fun experience to work on Andy Rubin's team. Can't wait to see where I go next! </div>
+      </div>
 
+-->
 
-<div id="project2_pic">
-</div>
-
-<div class="selectedprojects_headerdiv" id="project2_article">
-   <div class = "selectedprojects_titletext show-on-scroll ">Art, Skyboxes, and Optimization </div>
-   
-   <div class="selectedprojects_text" id="project2_text">
-    The image above shows how much I can push my 3D models and lighting to achieve a somewhat stable 72 FPS on the Oculus Quest.
-        Sadly, the only problem is that when physics are implemented, it drops the FPS to around 65. If I am going to fix this,
-        I would either have to optimize my physics engine or look into some optimization methods. 
-
-    <div id="project2_pic2"></div>
- 
-       Porting the PC version of Glorious Noon to the Oculus Quest was hard to do. 
-        For example, I had to unsubdivide my models to reduce the detail/triangles.
-        
-    <br> <br>
-
-    Although the Quest has a comparable resolution to the original Rift, the image 
-    quality for mobile Unity games still became less bright and more ugly. I created
-    some new skyboxes with realistic lighting to compensate. 
-
-    <div id="project2_pic3"></div>
-
-    <a class = "website-button" id = "project2_button" href = "https://github.com/Kokobe/Glorious-Noon-Remake">Check it out!</a>
-
+<div id="featured">
+   <h2 class = "title" id = "secondTitle">Asymmetrical VR   </h2>
+   <a class = "clickableText" id = "secondProjectTitle" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Asymmetrical Fruit Ninja</a>
+   <div class = "left-text">"Asymmetrical Fruit Ninja" 
+      is where player interaction is split into two channels: the 
+      <span class = "underline"> desktop and the VR kit</span>. In this project game, one 
+      player uses the desktop to control one entity and the VR player will battle the desktop player.
+      The desktop player will throw fruits and have mobility whereas the the VR player will have no 
+      mobility, but the ability to smash the fruits and throw their only weapon at the desktop player.
+      <span id = "coloredYellow">This project is intended to expand the interactiveness of VR, 
+         allowing both the singular VR players and those observing outside of VR to both have fun simulataneously.</span> 
    </div>
+   <div class = "secondImageSettings" id = "asymImage1"></div>
+   <div class = "secondImageSettings" id = "asymImage2"></div>
+   <div class = "secondImageSettings" id = "asymImage3"></div>
+   <a class = "website-button" id = "asymLinkButton" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Try it out!</a>
 </div>
-
 
 
 
@@ -92,7 +101,7 @@ Will replace this with a different useful bar in the future. -->
       <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
       <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
       <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
-</div>
+  </div>
 
 
 <!-- moved here so that document loads before scanning for "show-on-scroll" class-->

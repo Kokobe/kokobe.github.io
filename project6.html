@@ -1,0 +1,102 @@
+<link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<link href="nav.css" rel="stylesheet">
+<link href="slider.css" rel="stylesheet">
+<link href="titleAndOverlay.css" rel="stylesheet">
+<link href="projects.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="javascripts/parallax.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('#project6_pic').parallax("50%", 0.5, true, 500, 1700);
+        $('#project6_pic2').parallax("50%", 0.5, true, 500, 1700);
+       // $('#project6_pic3').parallax("50%", 0.8, true, 500, 1700);
+        // all elements with class "show-on-scroll" as array
+
+
+});
+</script>
+
+<!-- Needed to support multiple window widths -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- Top navigation. Styling found in nav.css -->
+<div class = "topnav">
+    <a class = "logo" href ="index.html"></a>
+    <div class = "navDiv">
+       <span id = "emailText">jkobechang@gmail.com </span></div>
+    <div class = "navDiv" id = "aboutmeBox">
+       <a id = "aboutmeText" href = "#third">About me</a></div>
+    <div class = "navDiv" id = "projectsBox">
+          <a id = "projectsText" href = "index.html#selectedprojects">Projects</a></div>
+    <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
+    <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+    <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+</div>
+
+
+
+
+
+
+<div class="project_article_pic" id="project6_pic">
+</div>
+
+<div class="selectedprojects_headerdiv" id="project6_article">
+   <div class = "selectedprojects_titletext show-on-scroll ">Art, Skyboxes, and Optimization </div>
+   
+   <div class="selectedprojects_text" id="project6_text">
+    The image above shows how much I can push my 3D models and lighting to achieve a somewhat stable 72 FPS on the Oculus Quest.
+        Sadly, the only problem is that when physics are implemented, it drops the FPS to around 65. If I am going to fix this,
+        I would either have to optimize my physics engine or look into some optimization methods. 
+
+    <div  id="project6_pic2"></div>
+ 
+       Porting the PC version of Glorious Noon to the Oculus Quest was hard to do. 
+        For example, I had to unsubdivide my models to reduce the detail/triangles. 
+        I also had to rework some of the physics code because I didn't write code as cleanly as 
+        I should have when I made 
+        <a class = "clickableText" href= "https://store.steampowered.com/app/724870/Glorious_Noon/">Glorious Noon</a> in high school. 
+        
+    <br> <br>
+
+    Although the Quest has a comparable resolution to the original Rift, the image 
+    quality for mobile Unity games still became less bright and more ugly. I created
+    some new skyboxes with realistic lighting to compensate. 
+
+    <div id="project6_pic3"></div>
+
+    <a class = "website-button" id = "project6_button" href = "https://github.com/Kokobe/Glorious-Noon-Remake">Check it out!</a>
+
+   </div>
+</div>
+
+
+
+
+<!-- For now I am copying and pasting the top nav to the bottom. 
+Will replace this with a different useful bar in the future. -->
+<div class = "topnav">
+      <a class = "logo" href ="index.html"></a>
+      <div class = "navDiv">
+         <span id = "emailText">jkobechang@gmail.com </span></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#third">About me</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "index.html#selectedprojects">Projects</a></div>
+      <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
+      <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+      <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+</div>
+
+
+<!-- moved here so that document loads before scanning for "show-on-scroll" class-->
+<script src="javascripts/show-on-scroll.js"></script>

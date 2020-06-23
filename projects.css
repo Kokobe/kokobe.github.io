@@ -21,8 +21,7 @@ body{
     font-size: 2vw;
 }
 
-#project2_pic{
-    background: url(images/glorious_noon_new.png) 50% 0 no-repeat fixed;
+.project_article_pic{
     background-size: 100vw;
     color: white;
     height: 50vw;
@@ -32,20 +31,33 @@ body{
     width: 100%;
 }
 
-#project2_article
+#project5_pic
 {
-    height: 210vw;
+    background: url(images/Poster.png) 50% 0 no-repeat;
+    background-size: 100vw;
+    height: 60vw;
 }
 
-#project2_text
+
+#project6_pic
+{
+    background: url(images/glorious_noon_new.png) 50% 0 no-repeat fixed;
+}
+
+#project6_article
+{
+    height: 220vw;
+}
+
+#project6_text
 {
     margin: 25vw 6vw;
     font-size: 2vw;
     color: #dddddde3
 }
 
-#project2_pic2{
-    background: url(images/project2_pic2.png) 50% 0 no-repeat fixed;
+#project6_pic2{
+    background: url(images/project6_pic2.png) 50% 0 no-repeat fixed;
     background-size: 50vw;
     color: white;
     height: 50vw;
@@ -55,8 +67,8 @@ body{
     width: 100%;
 }
 
-#project2_pic3{
-    background: url(images/project2_pic3.png) 50% 0 no-repeat;
+#project6_pic3{
+    background: url(images/project6_pic3.png) 50% 0 no-repeat;
     background-size: 50vw;
     color: white;
     height: 70vw;
@@ -65,7 +77,7 @@ body{
     padding: 0;
 }
 
-#project2_button
+#project6_button
 {
     margin: -5vw 0 0 36vw;
     
