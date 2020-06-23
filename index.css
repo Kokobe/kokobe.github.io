@@ -639,9 +639,9 @@ u{
     }
     #about_me_name
     {
-        margin: 15vw 12vw;
+        margin: 15vw 10.5vw;
         font-size: 8vw;
-        width: 70vw;
+        width: 80vw;
     }
 
     .about_me_text
@@ -696,8 +696,6 @@ and also at parallax.js  */
     }
     
 
-
-
     #featured
     {
         height: 150vw;
@@ -709,6 +707,7 @@ and also at parallax.js  */
     {
         background-size: 300vw;
     }
+
 
    
     .meAndBro
