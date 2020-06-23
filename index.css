@@ -111,7 +111,7 @@ body{
 .selectedprojects_text
 {
     font-weight: 600;
-    font-family: 'Raleway';
+    font-family: 'Muli', sans-serif;
     color: white;
     font-size: 4.2vw;
 }
@@ -415,7 +415,7 @@ body{
     overflow: hidden;
 }
 #about-me-text{
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Muli', sans-serif;
     font-size: 15vw;
     margin: 5vw 39vw;
     position: relative;

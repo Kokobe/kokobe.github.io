@@ -31,11 +31,39 @@ body{
     width: 100%;
 }
 
+#project4_article
+{
+    height: 170vw;
+    background-color: rgb(51, 58, 97);
+}
 
 #project4_pic
 {
     background: url(images/project4_pic.png) 50% 0 no-repeat fixed;
     background-size: 101vw;
+}
+
+#project4_pic2
+{
+    background: url(images/project4_pic2.png) 50% 0 no-repeat;
+    background-size: 50vw;
+    color: white;
+    height: 30vw;
+    margin: 10vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#project4_pic3{
+    background: url(images/essential_tools.png) 50% 0 no-repeat ;
+    background-size: 50vw;
+    color: white;
+    height: 50vw;
+    margin: 10vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
 }
 
 #project5_pic
@@ -64,7 +92,7 @@ body{
 {
     margin: 25vw 6vw;
     font-size: 2vw;
-    color: #dddddde3
+    color: #dddddde0
 }
 
 #project6_pic2{
@@ -91,5 +119,7 @@ body{
 #project6_button
 {
     margin: -5vw 0 0 36vw;
-    
+    font-size: 2vw;
+    font-family: 'Lora', serif;
+    font-style: italic;
 }

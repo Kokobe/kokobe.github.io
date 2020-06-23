@@ -1,5 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px|Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <link href="nav.css" rel="stylesheet">
 <link href="slider.css" rel="stylesheet">
@@ -50,31 +51,43 @@ $(document).ready(function(){
 <div class="project_article_pic" id="project4_pic">
 </div>
 
-<div class="selectedprojects_headerdiv" id="project6_article">
+<div class="selectedprojects_headerdiv" id="project4_article">
    <div class = "selectedprojects_titletext show-on-scroll ">Walkie Talkie</div>
    
    <div class="selectedprojects_text" id="project6_text">
-    The image above shows how much I can push my 3D models and lighting to achieve a somewhat stable 72 FPS on the Oculus Quest.
-        Sadly, the only problem is that when physics are implemented, it drops the FPS to around 65. If I am going to fix this,
-        I would either have to optimize my physics engine or look into some optimization methods. 
+    Since Essential  <a class = "clickableText" href= "https://www.essential.com/blog/essential-update">discontinued</a>,
+    I'm allowed to share one of the 3 projects I built on the Summer of 2019: Walkie Talkie.
+    I'm extremely sad that Essential's Project GEM will not be coming to the market because 
+    this Android application was going to be an Easter Egg as well as the foundation for 
+    the company-wide <a class = "clickableText" href= "https://videos.ctfassets.net/6nksu8gsclwp/7kut0mQHcGQP1T90mBhMHr/8f080be34f700e874ef89ae2e8fccef7/3o4GEM-VoiceFinalA.mp4">Voice Mode</a> feature. 
 
-    <div  id="project6_pic2"></div>
+    <div  id="project4_pic2"></div>
  
-       Porting the PC version of Glorious Noon to the Oculus Quest was hard to do. 
-        For example, I had to unsubdivide my models to reduce the detail/triangles. 
-        I also had to rework some of the physics code because I didn't write code as cleanly as 
-        I should have when I made 
-        <a class = "clickableText" href= "https://store.steampowered.com/app/724870/Glorious_Noon/">Glorious Noon</a> in high school. 
+       Walkie Talkie was made for the dimensions of Project GEM (shown above) and 
+       it does exactly what it's name says: it streams voice input to other users.  
+
+       <br> <br> <br>
+       THE BASICS: I designed an Android app that dynamically translates sound waves into chunks of bytes
+       while also sending these bytes at a certain rate across a socket server. 
+       (This required multithreading). I created a voice input/output socket server hosted on AWS to
+       stream to all users in the same "squad". Pressing the Walkie Talkie button can also 
+       send push notifications to a friend that isn't currently on the app. 
+
+       <br> <br> <br>
+       With the guidance of the Android and server-side experts at Essential, I built a scalable server and application 
+       that dynamically stores user data into Firebase Realtime Database. 
+       The app enables user customability, as one can edit their username, save friends/groups, 
+        and even map their fingerprints to friends; moreover, I integrated the fingerprint sensor as a way
+        to choose users to stream to. 
+    
+        <br> <br>
+
+        Here are some of the tools I used: 
+
         
     <br> <br>
 
-    Although the Quest has a comparable resolution to the original Rift, the image 
-    quality for mobile Unity games still became less bright and more ugly. I created
-    some new skyboxes with realistic lighting to compensate. 
-
-    <div id="project6_pic3"></div>
-
-    <a class = "website-button" id = "project6_button" href = "https://github.com/Kokobe/Glorious-Noon-Remake">Check it out!</a>
+    <div id="project4_pic3"></div>
 
    </div>
 </div>
