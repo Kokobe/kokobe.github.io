@@ -87,6 +87,14 @@ body{
     width: 100%;
 }
 
+
+#project5_text
+{
+    margin: 25vw 6vw;
+    font-size: 2vw;
+    color: #dddddde0
+}
+
 #project5_pic
 {
     background: url(images/Poster.png) 50% 0 no-repeat;
