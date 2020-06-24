@@ -56,16 +56,24 @@ body{
     background-size: 101vw;
 }
 
+#project4_text
+{
+    margin: 55vw 6vw;
+    font-size: 2vw;
+    color: #dddddde0
+}
+
 #project4_pic2
 {
     background: url(images/project4_pic2.png) 50% 0 no-repeat;
     background-size: 50vw;
     color: white;
     height: 30vw;
-    margin: 10vw auto;
+    margin: 18vw 0vw;
     overflow: hidden;
     padding: 0;
     width: 100%;
+    position:absolute
 }
 
 #project4_pic3{
