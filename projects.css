@@ -98,12 +98,19 @@ body{
 
 #project6_article
 {
-    height: 220vw;
+    height: 320vw;
+}
+
+#project6_video
+{
+    margin: 30vw 14vw;
+    width: 70vw;
+    height: 50vw;
 }
 
 #project6_text
 {
-    margin: 25vw 6vw;
+    margin: -20vw 6vw;
     font-size: 2vw;
     color: #dddddde0
 }
@@ -123,7 +130,7 @@ body{
     background: url(images/project6_pic3.png) 50% 0 no-repeat;
     background-size: 50vw;
     color: white;
-    height: 70vw;
+    height: 100vw;
     margin: 10vw auto;
     overflow: hidden;
     padding: 0;
