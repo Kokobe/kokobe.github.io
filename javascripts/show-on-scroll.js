@@ -5,15 +5,18 @@ function isElementInViewport(el) {
     el = el[0];
   }
   var rect = el.getBoundingClientRect();
+  var padding = 300
+  var top = rect.top + padding
+  var bottom = rect.bottom - padding
   return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
+    (top <= 0
+      && bottom >= 0)
     ||
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    (bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      top <= (window.innerHeight || document.documentElement.clientHeight))
     ||
-    (rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    (top >= 0 &&
+      bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
 
