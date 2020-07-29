@@ -1,0 +1,100 @@
+<link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+<link href="index.css" rel="stylesheet">
+<link href="nav.css" rel="stylesheet">
+<link href="slider.css" rel="stylesheet">
+<link href="titleAndOverlay.css" rel="stylesheet">
+<link href="projects.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="javascripts/parallax.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('#project7_pic').parallax("50%", 0.5, true, 500, 1700);
+        $('#project7_pic2').parallax("50%", 0.5, true, 500, 1700);
+       // $('#project6_pic3').parallax("50%", 0.8, true, 500, 1700);
+        // all elements with class "show-on-scroll" as array
+
+
+});
+</script>
+
+<!-- Needed to support multiple window widths -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- Top navigation. Styling found in nav.css -->
+<div class = "topnav">
+    <a class = "logo" href ="index.html"></a>
+    <div class = "navDiv">
+       <span id = "emailText">jkobechang@gmail.com </span></div>
+    <div class = "navDiv" id = "aboutmeBox">
+       <a id = "aboutmeText" href = "#third">About me</a></div>
+    <div class = "navDiv" id = "projectsBox">
+          <a id = "projectsText" href = "index.html#selectedprojects">Projects</a></div>
+    <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
+    <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+    <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+</div>
+
+
+
+
+
+
+<div class="project_article_pic" id="project7_pic">
+</div>
+
+<div class="selectedprojects_headerdiv" id="project7_article">
+   <div class = "selectedprojects_titletext show-on-scroll ">Guitar VR</div>
+   <iframe id="project7_video" width="560" height="315" src="https://www.youtube.com/embed/VTP6D7Lqk5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div class="selectedprojects_text" id="project7_text">
+    The goal of "Guitar VR" is to enable its users to play chords from any songs without any experience. It has 
+    potential applications in physical therapy, music creation, and inclusivity. For example, amputees can customize
+    the controls of the app to play the guitar in a way that fits their bodies. Of course, this is just my vision and my app 
+    still has a long way to go. I'm very proud of the progress I was able to make during my free time in the past two weeks. 
+
+    <div  id="project7_pic2"></div>
+ 
+    Contrary to what I said in the video, 
+    I'm keeping the code in a private repository for now because I plan to release this as an app on the Oculus Store. 
+    However, if you want to try it out: I posted a build on this <a class = "clickableText" href= "https://github.com/Kokobe/Guitar-VR-Builds">repository</a>.
+    Email me at jkobechang@gmail.com if you have any questions or want more information! 
+    <br> <br>
+
+    <div id="project7_pic3"></div>
+
+    <a class = "website-button" id = "project6_button" href = "https://github.com/Kokobe/Guitar-VR-Builds">Check it out!</a>
+
+   </div>
+</div>
+
+
+
+
+<!-- For now I am copying and pasting the top nav to the bottom. 
+Will replace this with a different useful bar in the future. -->
+<div class = "topnav">
+      <a class = "logo" href ="index.html"></a>
+      <div class = "navDiv">
+         <span id = "emailText">jkobechang@gmail.com </span></div>
+      <div class = "navDiv" id = "aboutmeBox">
+         <a id = "aboutmeText" href = "#third">About me</a></div>
+      <div class = "navDiv" id = "projectsBox">
+            <a id = "projectsText" href = "index.html#selectedprojects">Projects</a></div>
+      <a class = "resume" href = "JehanChangResume.pdf">Resume</a>
+      <a class = "gitLink" href = "https://github.com/Kokobe" ></a>
+      <a class = "linkedInLink" href = "https://www.linkedin.com/in/jehan-chang-657896156"></a>
+</div>
+
+
+<!-- moved here so that document loads before scanning for "show-on-scroll" class-->
+<script src="javascripts/show-on-scroll.js"></script>

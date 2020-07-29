@@ -159,3 +159,50 @@ body{
     font-family: 'Lora', serif;
     font-style: italic;
 }
+
+#project7_article
+{
+    height: 225vw;
+    background-color: rgb(26, 28, 36);
+}
+
+
+#project7_pic
+{
+    background: url(images/project7_pic.png) 50% 0 no-repeat fixed;
+}
+
+#project7_video
+{
+    margin: 18vw 14vw;
+    width: 70vw;
+    height: 50vw;
+}
+
+#project7_text
+{
+    margin: -10vw 6vw;
+    font-size: 2vw;
+    color: #dddddde0
+}
+
+#project7_pic2{
+    background: url(images/project7_pic2.png) 50% 0 no-repeat fixed;
+    background-size: 50vw;
+    color: white;
+    height: 50vw;
+    margin: 10vw auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#project7_pic3{
+    background: url(images/project7_pic3.png) 50% 0 no-repeat;
+    background-size: 50vw;
+    color: white;
+    height: 40vw;
+    margin: 5vw auto;
+    overflow: hidden;
+    padding: 0;
+}

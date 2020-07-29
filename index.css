@@ -132,11 +132,19 @@ body{
     opacity: 1;
 }
 
+#project7
+{
+    background: url("article_covers/project_7.png") 0% 0 no-repeat;
+    background-size: 20vw;  
+    margin: 23vw 0 0 15vw;
+}
+
 #project6
 {
     background: url("article_covers/project_6.png") 0% 0 no-repeat;
     background-size: 20vw;  
-    margin: 23vw 0 0 15vw;
+    
+    margin: 23vw 0 0 40vw;
 }
 
 
@@ -144,7 +152,8 @@ body{
 {
     background: url("article_covers/project_5.png") 0% 0 no-repeat;
     background-size: 20vw;  
-    margin: 23vw 0 0 40vw;
+    
+    margin: 23vw 0 0 65vw;
 }
 
 
@@ -152,7 +161,8 @@ body{
 {
     background: url("article_covers/project_4.png") 0% 0 no-repeat;
     background-size: 20vw;  
-    margin: 23vw 0 0 65vw;
+   
+    margin: 53vw 0 0 15vw;
 }
 
 #project3
