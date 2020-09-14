@@ -77,93 +77,8 @@ They are differentiated in index.css by child index! -->
    </div>
 </div>
 
-<div id="selectedprojects">
-   <div class = "selectedprojects_titletext show-on-scroll ">Selected Projects </div>
-   <a href="guitar.html"> <div class="project_pic" id ="project7" > </div> </a>
-   <a href="GN.html"> <div class="project_pic" id ="project6" > </div> </a>
-   <a href="project5.html"> <div class="project_pic" id ="project5" > </div> </a>
-   <a href="essential.html"> <div class="project_pic" id ="project4" > </div> </a>
-   <a href="asymVR.html"> <div class="project_pic" id ="project2" > </div> </a>
-   <a href="https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0"> <div class="project_pic" id ="project1" > </div> </a>
-
-</div>
-
-<!-- 
-<div id="essential">
-   <h2 class = "title" id = "essential_title" >My internship at Essential</h2>
-   <div class = "center-text"> Working at Essential has galvanized my growth as a programmer, creative thinker, and a communicator. </div>
-   <div class = "essential_image_settings" id = "essential_image1"></div>
-   <div class = "center-text"> Using the tools above (these are only a selected few), I created and refined apps for their 
-         <a class = "clickableText" href = "https://www.theverge.com/2019/10/8/20905525/andy-rubin-elongated-phone-essential-android">new mobile device</a>, 
-         gave presentations of my projects to the entire company,
-      and got to learn from a plethora of talented developers. </div>
-
-      <div class = "center-text"> 
-            Here is a picture from the goodbye party they threw me.  </div>
-      </div>
-
-      <div class = "essential_image_settings" id = "essential_image2"></div>
-
-      <div class = "center-text"> 
-            It was an electrifyingly fun experience to work on Andy Rubin's team. Can't wait to see where I go next! </div>
-      </div>
-
--->
-<!-- This div will feature my selected projects.
-Has parallax scrolling of the background, so styling is in index.css  -->
-<!-- 
-<div id="featured">
-   <h2 class = "title" id = "secondTitle">Featured Projects</h2>
-   <a class = "clickableText" id = "secondProjectTitle" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Asymmetrical Fruit Ninja</a>
-   <div class = "left-text">"Asymmetrical Virtual Reality" 
-      is where player interaction is split into two channels: the 
-      <span class = "underline"> desktop and the VR kit</span>. In this project game, one 
-      player uses the desktop to control one entity and the VR player will battle the desktop player.
-      The desktop player will throw fruits and have mobility whereas the the VR player will have no 
-      mobility, but the ability to smash the fruits and throw their only weapon at the desktop player.
-      <span id = "coloredYellow">This project is intended to expand the interactiveness of VR, 
-         allowing both the singular VR players and those observing outside of VR to both have fun simulataneously.</span> 
-   </div>
-   <div class = "secondImageSettings" id = "asymImage1"></div>
-   <div class = "secondImageSettings" id = "asymImage2"></div>
-   <div class = "secondImageSettings" id = "asymImage3"></div>
-   <a class = "website-button" id = "asymLinkButton" href = "https://github.com/Kokobe/VR-Asymmetrical-Fruit-Ninja">Try it out!</a>
-</div>
--->
-
-<!-- I had to separate the overlay and the video itself.
-Its okay because .video-overlay has an absolute position.
-You can find the styling to this in titleAndOverlay.css -->
-<div class = "video-overlay" id = "vroverlay">
-      <h2 id = "VR-text" class = "text">My Virtual Reality Game</h2>
-      <!-- styling for the class "website-button" is in index.css because I intend
-      to use it independently of overlays. Will be used in "second" div.-->
-      <a class = "website-button" id = "gameLinkButton" href = "https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0">Check it out!</a>
-</div>
-
-
-<!-- Video + partitioning its place/size onto the page. Styling found in index.css -->
-<div id = "videoDiv">
-   <video autoplay muted loop id = "videoStyle">
-      <source src="VideoFreezeFrame.mp4" type="video/mp4">
-   </video>
-</div>
-
-
-
-
 <!-- Everything in the "third" section are styled in index.css -->
 <div id="third">
-   <!-- These are all parallax pictures imposed on top of everything else. (their position is absolute)
-   The javascript script above specifies their scroll speed.
-   Styling found in index.css 
-   <div class = "scrollpic"></div>
-   <div class = "grouppic"></div>
-   <div class = "grouppic2"></div>
-   <div class = "gunnvrpic"></div>
-   <div class = "amplifyLogo"></div>
-   <div class = "meAndBro"></div>
-   -->
    <div id="profile_pic"> </div>
    <div id="about_me_textbox"> 
       <div id="about_me_name">Jehan Kobe Chang</div>
@@ -175,58 +90,26 @@ You can find the styling to this in titleAndOverlay.css -->
          <a class = "clickableText" href = "http://amplify.ai/#welcome">Amplify.ai</a>, 
          and developed three applications for 
          <a class = "clickableText" href = "https://www.essential.com/blog/essential-update">Essential&#39;s new mobile device</a>. 
-         You can read more about my experience in my  <a class = "clickableText" href = "JehanChangResume.pdf"> resume</a>.
+         Currently, I work for 
+         <a class="clickableText" href="https://www.neon.life">STAR Labs (Samsung)</a>
+         as a SWE Intern. You can read more about my experience in my  <a class = "clickableText" href = "JehanChangResume.pdf"> resume</a>.
          <br> <br>
          I'm a proficient full-stack developer passionate about all aspects of programming. My technical background ranges from machine learning 
          to Android development to virtual reality experiences, and I'm able to apply my diverse skill-set to various challenging projects. 
          I have worked as a solo programmer, project-lead, and a team member, all of which are roles that I function effectively in.</div>
    </div>
-   
-
-   <!-- Each <span> is styled in index.css to be orange and bold 
-   <p class = "paragraph" id = "p1"> My name is <span>Jehan Kobe Chang</span>.</p>
-
-   <p class = "paragraph" id = "p2"> I am currently a junior undergraduate at UC Irvine majoring in 
-      <span id = "coloredYellow">Computer Science</span>. 
-      I am also in the Campuswide Honors Program (CHP) -- which has me write 
-      <a class = "clickableText" href = "https://kobeblog872749184.wordpress.com/">articles</a> about the
-         <span id = "coloredBlue">social</span>, <span id = "coloredYellow">technological</span> 
-         impacts of <span id = "coloredRed">Empire and its Ruins</span>. 
-   </p>
-
-   <p class = "paragraph" id = "p3"> 
-      Here is my <a class = "clickableText" id = "b1" href = "JehanChangResume.pdf">resume</a> 
-      and if you would like to know more about me, my email is 
-      <span id ="coloredGreen">jkobechang@gmail.com</span> or Facebook message me @ 
-      <span id ="coloredBlue">Kobe Chang</span>.
-   </p>
-
-   <p class = "paragraph" id = "p4"> When I was a junior attending 
-      <span id = "coloredRed">Henry M. Gunn High School</span>,
-      I founded and presided over the Gunn Virtual Reality Club. A year later, I published my 
-      <a class = "clickableText" href = "https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0">VR game onto Steam</a> .
-      Now, I am a Programming Officer for <a class = "clickableText" href = "https://www.vruci.com/">VR @ UCI</a>.
-   </p>
-
-   <p class = "paragraph" id = "p4"> I have had two paid summer internships at
-      <a class = "clickableText" href= "http://amplify.ai/#welcome">Amplify.ai</a>.
-      This company specializes in "<span>AI-driven conversations</span>" 
-      and makes <span id = "coloredBlue">Facebook chatbots</span> for companies and campaigns
-      such as Cheetos, Sephora, <a class = "clickableText" href = "https://48months.mygov.in/">48 Months</a>, 
-      Flawless, etc.
-   </p>
-   
-
-   <p class = "paragraph" id = "p4"> <span id = "coloredYellow">Artificial Intelligence's</span> 
-      infinite applications stimulate my creativity and enable me to supercharge my projects. 
-      I aim to develop projects that utilize AI's capabilities in generating 
-      <span id = "coloredRed">positive</span>, <span id = "coloredBlue">social</span>, 
-      <span id = "coloredYellow">technological</span>, and <span id ="coloredGreen">environmental</span> 
-      impacts on the world (with a little <span id = "coloredRed">VR</span> thrown into the mix). 
-   </p>
--->
 </div>
 
+<div id="selectedprojects">
+   <div class = "selectedprojects_titletext show-on-scroll ">Selected Projects </div>
+   <a href="guitar.html"> <div class="project_pic" id ="project7" > </div> </a>
+   <a href="GN.html"> <div class="project_pic" id ="project6" > </div> </a>
+   <a href="project5.html"> <div class="project_pic" id ="project5" > </div> </a>
+   <a href="essential.html"> <div class="project_pic" id ="project4" > </div> </a>
+   <a href="asymVR.html"> <div class="project_pic" id ="project2" > </div> </a>
+   <a href="https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0"> <div class="project_pic" id ="project1" > </div> </a>
+
+</div>
 
 <!-- For now I am copying and pasting the top nav to the bottom. 
 Will replace this with a different useful bar in the future. -->

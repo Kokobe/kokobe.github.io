@@ -30,7 +30,7 @@ body{
 }
 
 #selectedprojects {
-    background-color: black;
+    background-color: #1f1f1f;
     color: white;
     height: 90vw;
     margin: 0vw auto;
@@ -441,7 +441,7 @@ body{
 #about_me_textbox
 {
     width: 95vw;
-    height: 60vw;
+    height: 65vw;
     padding: 0;
     position: absolute;
     margin: 15vw 2.3vw;
